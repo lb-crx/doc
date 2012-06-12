@@ -1,5 +1,10 @@
 .. include:: LINKS.rst
 
+.. |zqeyes| image:: _static/zq-eyes.png
+   :alt: 是也乎;-)
+   :target: http://wiki.woodpecker.org.cn/moin/ZoomQuiet
+
+
 关于译者
 ===============
 

@@ -3,7 +3,7 @@
 .. _chapter3index:
 
 
-参考
+参考资料 (0/4)
 ============================================
 
 
@@ -11,5 +11,8 @@
 
 .. toctree::
    
-
+    formats.rst
+    permissionwarnings.rst
+    chromeAPIs.rst
+    othersAPIs.rst
 

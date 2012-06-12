@@ -1,15 +1,17 @@
 
-Google Chrome 扩展
+Google Chrome 扩展开发手册
 ====================================
 
+这是官方 `Google Chrome Extensions <http://code.google.com/chrome/extensions/overview.html>`_
+文档的快速翻译,旨在帮助大家开发自个儿想要的扩展插件!
 
 
-开发手册
+开发手册 (1/5)
 ------------------------
 
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     0-start/index.rst
     1-guide/index.rst
@@ -18,11 +20,11 @@ Google Chrome 扩展
     4-samples/index.rst
 
 
-开发工具
+工具手册 (0/3)
 ------------------------
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     devtools/index.rst
     devtools/idxdoc.rst
