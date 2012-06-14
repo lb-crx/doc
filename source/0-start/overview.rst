@@ -81,11 +81,56 @@
 
 
 
-Files
+文件 Files
 ------------------------------------------------------------------------------
 
-    Referring to files
+每个扩展都应该包含下面的文件:
+  - `manifest` ~ 声明文件
+  - 一个或多个html文件（除非这个应用是一个皮肤）
+  - `可选的`: 一个或多个javascript文件
+  - `可选的`: 任何需要的其他文件，例如图片
+
+在进行扩展开发时，应该将所有把这些文件都放到同一个目录下.
+发布扩展时，这个目录将全部打包为一个特殊的使用 `.crx` 为后綴的 `ZIP`_ 文件.
+如果使用 `Chrome Developer Dashboard <https://chrome.google.com/webstore/developer/dashboard>`_ 上传扩展, 则,会自动自动生成 `.crx` 文件
+
+进一步有关扩展的发布,请参考: :ref:`Hosting <chapter1-Hosting>`
+
+
+文件引用    Referring to files
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+任何必要的文件都可以纳入扩展中，但是怎么使用它们呢？
+一般而言，同普通的HTML文件中那样通过相对地址来引用文件。
+下例演示了如何引用 `images` 子目录下的 `myimage.png`
+
+.. code-block:: html
+
+    <img src="images/myimage.png">
+
+
+
+当然,使用 `Google`_ `Chrome`_ 或是 `猎豹浏览器`_ 进行调试时,
+扩展中的所有文件,可以使用如下的绝对路径进行访问::
+
+    chrome-extension://<extensionID>/<pathToFile> 
+
+以上 `URL`_ 中, `<extensionID>` 是由扩展系统生成的唯一 `ID` .
+我们可以在扩展管理界面 (chrome://extensions) 中看到每个扩展的 `ID`.
+
+`<pathToFile>` 则是文件以扩展目录为根的路径,其实,也是相对路径.
+
+当我们在扩展目录中开发时(即,没有被打包前),
+扩展的 ID 是可以变更的.
+特别是每当我们从不同的目录中载入解开压缩的扩展时, ID 会变更.
+如果我们的扩展代码中,需要包含在扩展中文件的特殊路径,
+可以使用预定义变量 `@@extension_id` ,以免在开发过程中使用可能变更的 ID .
+
+当你
+When you package an extension (typically, by uploading it with the dashboard), the extension gets a permanent ID, which remains the same even after you update the extension. Once the extension ID is permanent, you can change all occurrences of @@extension_id to use the real ID. 
+
+:ref:`Predefined messages <chapter1-i18n>`
+
 
     The manifest file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

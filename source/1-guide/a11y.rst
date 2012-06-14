@@ -1,0 +1,15 @@
+.. include:: ../LINKS.rst
+
+.. _chapter1-a11y:
+
+
+
+Accessibility
+=============================
+
+
+
+
+.. seealso:: (^.^)
+    
+    原文: `Autoupdating <http://code.google.com/chrome/extensions/trunk/a11y.html>`_

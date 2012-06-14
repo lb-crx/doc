@@ -1,0 +1,15 @@
+.. include:: ../LINKS.rst
+
+.. _chapter1-i18n:
+
+
+
+Internationalization
+=============================
+
+
+
+
+.. seealso:: (^.^)
+    
+    原文: `Autoupdating <http://code.google.com/chrome/extensions/trunk/i18n.html>`_

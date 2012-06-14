@@ -14,6 +14,8 @@
 .. _git: http://progit.org/book/zh/
 .. _SSH: http://zh.wikipedia.org/zh/SSH
 .. _MD5: http://zh.wikipedia.org/wiki/MD5
+.. _ZIP: http://zh.wikipedia.org/wiki/ZIP_(%E7%AE%97%E6%B3%95)
+.. _URL: http://zh.wikipedia.org/wiki/URL
 
 .. _Lua: http://en.wikipedia.org/wiki/Lua_%28programming_language%29
 .. _正则表达式: http://zh.wikipedia.org/wiki/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F
@@ -30,6 +32,7 @@
 .. _猎豹浏览器: http://www.liebao.cn/
 
 .. _Google: http://zh.wikipedia.org/wiki/Google
+.. _Google Wave: http://zh.wikipedia.org/wiki/Google_Wave
 .. _V8: http://zh.wikipedia.org/wiki/V8_(JavaScript%E5%BC%95%E6%93%8E)
 .. _Chromium: http://zh.wikipedia.org/wiki/Chromium
 .. _ChromeiumOS: http://www.chromium.org/chromium-os
