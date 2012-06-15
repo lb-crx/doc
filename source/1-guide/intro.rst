@@ -1,6 +1,4 @@
 
-Developer's Guide
-===============================================
 
 These pages assume you've completed the Getting Started tutorial and Overview. Unless otherwise stated, everything in this page applies to packaged apps, as well as extensions.
 

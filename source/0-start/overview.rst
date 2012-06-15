@@ -124,51 +124,323 @@
 扩展的 ID 是可以变更的.
 特别是每当我们从不同的目录中载入解开压缩的扩展时, ID 会变更.
 如果我们的扩展代码中,需要包含在扩展中文件的特殊路径,
-可以使用预定义变量 `@@extension_id` ,以免在开发过程中使用可能变更的 ID .
+可以使用 :ref:`预定义消息 <chapter1-i18n>`  `@@extension_id` ,以免在开发过程中使用可能变更的 ID .
 
-当你
-When you package an extension (typically, by uploading it with the dashboard), the extension gets a permanent ID, which remains the same even after you update the extension. Once the extension ID is permanent, you can change all occurrences of @@extension_id to use the real ID. 
+当你将扩展打包时
+(经典的情景是准备从开发者面板上传),
+扩展将获得一个 `永久ID` ,
+意味着将根据此 `永久ID` 来识别以后扩展的更新.
+一但扩展拥有了 `永久ID` ,你就可以将所有 `@@extension_id` 替换成对应的真实ID 了!
 
-:ref:`Predefined messages <chapter1-i18n>`
+
+.. warning:: (#_#)
+
+    - 注意! `永久ID` 等于扩展作品的电子身份证!
+    - 但是! 如果从设计开发到发布到 `Google`_ 的 `web store` 中,整个过程中,如果我们从来没有使用内置的打包工具尝试打包,那么, `永久ID` 将在 `web store` 平台中自动生成,且我们无法下载到本地!
+    - 这样,就意识着,我们永远无法将扩展,放到其它网站中发布,除非先发布到 `Google`_ 的 `web store`
+    - 所以! 建议一定要先在本地进行扩展的打包,并获得 `.pem` 后綴的 `永久ID`私钥!
 
 
-    The manifest file
+
+
+引用文件    The manifest file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+引用文件指 `manifest.json` ,
+为扩展提供了必要的信息,
+是扩展可以发行使用的关键文件.
+
+这儿有份标准的引用文件,声明了从 google.com 获得信息的 `browser action` (浏览器行为)扩展
+
+::
+
+  {
+    "name": "My Extension",
+    "version": "2.1",
+    "description": "Gets information from Google.",
+    "icons": { "128": "icon_128.png" },
+    "background": {
+      "scripts": ["bg.js"]
+    },
+    "permissions": ["http://*.google.com/", "https://*.google.com/"],
+    "browser_action": {
+      "default_title": "",
+      "default_icon": "icon_19.png",
+      "default_popup": "popup.html"
+    }
+  }
 
 
-Architecture
+更多细节,参考: :ref:`引用文件 <chapter3-Manifest>`
+
+
+基本架构 Architecture
 ------------------------------------------------------------------------------
 
-    The background page
+绝大多数扩展都包含一个后台页面(`background page`),
+一个隐藏的页面,包含了扩展的主逻辑.
+
+当然也可以包含其它页面来形成扩展的界面.
+
+如果扩展需要直接嵌入到用户加载页面中(而不仅仅是扩展本身包含的页面),
+就需要使用 内容脚本(`content script`).
+
+
+后台页面    The background page
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-    UI pages
+以下插图,展示安装了两个扩展的浏览器,
+分别是黄色图标代表的 `browser action` 和蓝色图标代表的 `page action`.
+
+因为,是在 `background.html` 文件里定义了browser action和javascript代码.
+故而,在所有窗口里的 `browser action` 都可以工作.
+
+.. figure:: ../_static/images/overview/arch-1.gif
+
+
+不要使用对我们无用的 `后台页面`.
+因为,事实上 `后台页面` 总是打开的,
+所以,如果用户安装了很多有 `后台页面` 的扩展,可能告成造成浏览器性能下降.
+
+
+Here are some examples of extensions that usually do not need a background page:
+以下列举一些 `没必要` 使用 `后台页面` 的扩展:
+    - 扩展是 `browser action` 的,并且界面仅有弹出页面的(可能只是配置页面)
+    - 扩展提供了覆盖页面的 ~ 用以替代标准页面的
+    - 扩展是 `内容脚本` (content script) 的,并且不使用本地存储以及扩展接口
+    - 扩展除了配置页面,没有其它界面的
+
+
+详见: :ref:`后台页面 <chapter1-BackgroundPages>`
+
+
+界面页面    UI pages
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-    Content scripts
+扩展可以包含原生 `HTML`_ 页面来作界面.
+例如: `browser action` 扩展可以包含一个弹窗(popup)，而弹窗就能用html页面实现.
+任何扩展也可以拥有配置页面,用以提供给用户定制扩展的工作行为.
+另外一种特殊页面就是 :ref:`覆盖页面 <chapter1-OverridePages>`.
+还可以使用 `chrome.tabs.create()` 或 `window.open()` 来显示扩展内部的HTML文件。
+
+扩展里面的HTML页面可以互相访问各自DOM树中的全部元素，或者互相调用其中的函数。
+
+下图显示了 :ref:`浏览行为 <chapter1-BrowserActions>` 式扩展的弹窗的架构.
+弹窗的内容是由HTML文件（`popup.html`）定义的web页面。
+扩展同时也有 `后台页面`,
+但是 弹窗页面中 不必复制后台页面(background.html)里的代码,因为它可以直接调用后台页面中的函式。
+
+
+.. figure:: ../_static/images/overview/arch-2.gif
+
+详见: :ref:`浏览行为 <chapter1-BrowserActions>` , 
+:ref:`配置页面 <chapter1-OptionsPages>` , 
+:ref:`覆盖页面 <chapter1-OverridePages>` , 
+以及下述的 `页间交流` 一节.
+
+
+内容脚本    Content scripts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Using the chrome.* APIs
+如果扩展需要同(用户的)web页面进行交互，那么就需要使用内容脚本(Content script)。
+
+内容脚本(Content script)脚本是指能够在浏览器已经加载的页面内部运行的javascript脚本。
+可以将内容脚本(Content script)看作是网页的一部分，而不是它所在的应用（扩展）的一部分。
+
+内容脚本(Content script)可以获得浏览器所访问的web页面的详细信息，并可以对页面做出修改。
+下图显示了一个 内容脚本(Content script) 可以读取并修改当前页面的DOM树。但是它并不能修改它所在应用（扩展）的后台页面的DOM树。
+
+.. figure:: ../_static/images/overview/arch-3.gif
+
+内容脚本(Content script)与它所在的扩展并不是完全没有联系。
+一个内容脚本(Content script)脚本可以与所在的扩展交换消息，如下图所示。
+
+例如，当一个内容脚本(Content script)从页面中发现一个RSS种子时，
+它可以发送一条消息。或者由后台页面发送一条消息，
+要求 内容脚本(Content script) 修改一个网页的内容。
+
+.. figure:: ../_static/images/overview/arch-cs.gif
+
+
+详见: :ref:`内容脚本 <chapter1-ContentScripts>` , 
+
+
+使用 chrome.* APIs
 ------------------------------------------------------------------------------
 
-    Asynchronous vs. synchronous methods
+除了可以访问所有 web 页面可以使用的接口之外,
+扩展更是可以访问 `Chrome-专有` 接口来同浏览器更加紧密的进行结合 (之于 `猎豹浏览器`_ 也会公布各种专有接口给大家使用: :ref:`猎豹APIs <chapter3-liebaoapi>`).
+
+例如: 所有扩展或是 `Web app.`_ 都能使用标准的 `window.open()` 来打开一个 `URL`_ .
+但是,如果我们想指定某个已经存在的窗口打开 `URL`_ ,
+就需要使用 `Chrome-专有` 的 `chrome.tabs.create()` 来达成!
+
+
+
+
+
+同步对异方法   Asynchronous vs. synchronous methods
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-    Example: Using a callback
+多数 `chrome.*` 开头的接口是 `异步`(Asynchronous) 的: 它们立即返回,无需等待操作完成.
+如果我们想知道操作的结果,就需要在方法中加入一个回调函式.
+回调在主方法执行后稍晚才执行(甚至更加迟).
+
+这有个异步签名方法的实例
+::
+
+    chrome.tabs.create(object createProperties, function callback)
+
+
+
+其它 `chrome.*` 样儿的方法又都是 `同步`(Synchronous) 的.
+同步方法无需回调函式,
+因为它们无法没有执行完操作是不会返回的,
+一般同步方法总是有个返回类型.
+例如方法 `chrome.extensions.getBackgroundPage()`
+::
+
+    Window chrome.extension.getBackgroundPage()
+
+
+
+此方法没有回调,并返回 `Window` 类型对象,
+因为它同步返回后台页面,并不异步执行其它任务.
+
+
+
+实例:使用回调    Example: Using a callback
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-    More details
+
+Say you want to navigate the user's currently selected tab to a new URL. 
+
+假设我们想在用户当前选定的标签页中打开新的 `URL`_ 
+首先要获取当前标签的 ID (使用 :ref:`chrome.tabs.getSelected() <Tabs.getSelected>`) ,
+然后令其跳转到新的 `URL`_  (使用 :ref:`chrome.tabs.update() <Tabs.update>`).
+
+假如 `getSelected()` 是同步的,我们可能使用如下代码:
+
+.. code-block:: js
+
+    //此代码不工作!
+    var tab = chrome.tabs.getSelected(null); //警告!!!
+    chrome.tabs.update(tab.id, {url:newUrl});
+    someOtherFunction();
+
+
+这样会出错,因为 `getSelected()` 是异步的，它不等待操作完成就返回了，
+所以,事际上并没有返回任何值（尽管有些异步方法会返回信息）。
+我们可以从其函式参数中的 `回调` 看出 `getSelected()` 是异步的
+
+::
+
+    chrome.tabs.getSelected(integer windowId, function callback)
+
+
+修订上面的代码，必须使用那个回调参数。
+以下代码显示如何定义一个回调函数，从 `getSelected()` 获得结果（通过参数 `tab`）并调用 `update()`
+
+.. code-block:: js
+
+    //此代码可工作
+    1: var tab = chrome.tabs.getSelected(null, function(tab) {
+    2:     chrome.tabs.update(tab.id, {url:newUrl});
+    3: });
+    4: someOtherFunction();
+
+此例子中，以上代码其实是按如下顺序执行的:
+
+- 1
+- 4
+- 2
+
+只有在当前选定标签的信息可用后，即 `getSelected()`返回后的某一时刻，
+浏览器才会调用在 `getSelected` 中指定的回调函数（并且执行第二行）。
+另外,尽管 `update()` 是异步的，本例中并没有使用回调参数，
+因为我们对于回调的结果并不感兴趣。
+
+
+更多细节    More details
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+更多细节
+有关更多信息，请参见  :ref:`chrome.* API <chapter3-apindex>` 接口索引文档,
 
-Communication between pages
+并观看以下视频（英文）: `扩展接口的设计 <http://www.youtube.com/embed/bmxr75CV36A?rel=0>`_
+
+.. warning:: (#_#)
+
+    需要翻越...
+
+
+
+
+页间通信 Communication between pages
 ------------------------------------------------------------------------------
 
-Saving data and incognito mode
+扩展程序中的HTML页面通常需要通信。
+好在,同一扩展的所有页面在同一个进程中的同一个线程上执行，
+所以,页面可以直接互相调用函数。
+
+要获得扩展程序中的页面，使用 :ref:`chrome.extensions <chapter1-Extension>` 方法，例如
+`getViews()` 和 `getBackgroundPage()` 。
+一旦页面引用了扩展程序中的其它页面，第一个页面就可以执行其它页面上的函数，并且可以操纵它们的DOM。
+
+
+数据保存和隐身模式 Saving data and incognito mode
 ------------------------------------------------------------------------------
+
+扩展程序可以使用HTML5
+`网页存储API(web storage API) <http://dev.w3.org/html5/webstorage/>`_
+（例如 `localStorage`）或者向服务器发出请求从而保存数据。
+
+每当您要保存任何数据前，首先考虑是否来自隐身窗口。
+默认情况下，扩展程序不在隐身窗口中运行，
+但是打包应用(`packaged apps`)  `会`在隐身窗口中运行。
+
+当浏览器处于 `隐身模式` 时，需要考虑用户对我们的扩展程序或打包应用(`packaged apps`)的需求。
+`隐身模式` 要求不留下任何痕迹。
+当处理来自隐身窗口的数据时，尽可能地遵守这一约定。
+
+例如，如果您的扩展程序通常将浏览器历史记录保存至云端，不要保存来自隐身窗口的历史记录。
+另一方面，您可以在任何窗口中保存您的扩展程序设置，无论隐身与否。
+
+.. note:: 准则:
+
+  - 如果某些数据可能显示用户在网上的访问记录或者用户所做的事情，千万不要保存来自隐身窗口的这些数据。
+
+
+要确定窗口是否处于隐身模式，检查相关的 :ref:`Tab <Tabs.Types>` 或 :ref:`Windows <Windows.Types>`对象的 `icognito` 属性。例如：
+
+
+.. code-block:: js
+
+    var bgPage = chrome.extension.getBackgroundPage();
+
+    function saveTabData(tab, data) {
+      if (tab.incognito) {
+        bgPage[tab.url] = data;       // 只能留在内存的数据
+      } else {
+        localStorage[tab.url] = data; // 可以保存的数据
+    }
+
+
+
 
 现在? 
 ------------------------------------------------------------------------------
+
+现在我们已大致了解了扩展程序，应该准备好编写自己的扩展了。
+
+接下来可以参考以下内容:
+
+- :ref:`入门教程 <chapter0hallo>`
+- :ref:`调试教程 <chapter2debugging>`
+- :ref:`开发者指南 <chapter1index>`
+- :ref:`示例 <chapter4index>`
+
+
+
 
 
 

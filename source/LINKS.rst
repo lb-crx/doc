@@ -37,6 +37,8 @@
 .. _Chromium: http://zh.wikipedia.org/wiki/Chromium
 .. _ChromeiumOS: http://www.chromium.org/chromium-os
 .. _Chrome: http://zh.wikipedia.org/wiki/Google_Chrome
+.. _Web app.: http://en.wikipedia.org/wiki/Web_app
+
 .. _WebKit: http://zh.wikipedia.org/wiki/WebKit
 .. _Safari: http://zh.wikipedia.org/wiki/Safari
 .. _Apple: http://zh.wikipedia.org/wiki/%E8%98%8B%E6%9E%9C%E5%85%AC%E5%8F%B8

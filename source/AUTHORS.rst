@@ -18,6 +18,13 @@
 
     - 参考了之前 `中国Chrome爱好者 <http://www.chromi.org/archives/5176>`_ 翻译的内容,进行了针对性的修订
 
+- `Samuel V <https://plus.google.com/107022387755838991854/>`_
+
+    - `关于 - Chrome扩展程序开发人员文档（非官方中文版） <https://sites.google.com/site/crxdoczh/misc/about>`_
+    - 另外一位独行大侠,也完成了一份比较完整的技术文档
+    - 而且有: `术语表 <https://sites.google.com/site/crxdoczh/misc/termiology>`_
+
+
 - `Zoom.Quiet`_  |zqeyes| 根据以上前人的贡献,将所有相关的官方文档,组织为开放图书工程发布!
 
     - Python 中文社区创始人 / 管理员之一
