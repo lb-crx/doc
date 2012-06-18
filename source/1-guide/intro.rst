@@ -42,7 +42,7 @@ Implementing the innards of your extension
 Finishing and distributing your extension
 --------------------------------------------------------------  
 
-- `自动更新 <chapter1-Autoupdating>`    Update extensions automatically
+- :ref:`自动更新 <chapter1-Autoupdating>`    Update extensions automatically
 - Hosting     Host extensions on Google servers or your own
 - Other Deployment Options    Distribute extensions on your network or with other software
 - Packaging   Create a .crx file so you can distribute your extension 
