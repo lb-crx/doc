@@ -20,7 +20,7 @@ Interacting with Google Chrome in other ways
 
 - Bookmarks   Create, organize, and otherwise manipulate the user's bookmarks
 - Cookies     Explore and modify the browser's cookie system
-- Developer Tools     Add features to Chrome Developer Tools
+- :ref:`Developer Tools <chapter1-DeveloperTools>`     Add features to Chrome Developer Tools
 - Events  Detect when something interesting happens
 - History     Interact with the browser's record of visited pages
 - Tabs    Create, modify, and rearrange tabs in the browser
@@ -42,7 +42,7 @@ Implementing the innards of your extension
 Finishing and distributing your extension
 --------------------------------------------------------------  
 
-- Autoupdating    Update extensions automatically
+- `自动更新 <chapter1-Autoupdating>`    Update extensions automatically
 - Hosting     Host extensions on Google servers or your own
 - Other Deployment Options    Distribute extensions on your network or with other software
 - Packaging   Create a .crx file so you can distribute your extension 

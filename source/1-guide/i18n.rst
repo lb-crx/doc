@@ -12,4 +12,4 @@ Internationalization
 
 .. seealso:: (^.^)
     
-    原文: `Autoupdating <http://code.google.com/chrome/extensions/trunk/i18n.html>`_
+    原文: `Internationalization <http://code.google.com/chrome/extensions/trunk/i18n.html>`_
