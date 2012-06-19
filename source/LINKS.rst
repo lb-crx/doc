@@ -23,6 +23,8 @@
 
 .. _reSTsections: http://sphinx.pocoo.org/rest.html#sections
 
+.. _OAuth: http://zh.wikipedia.org/wiki/OAuth
+
 .. node相关 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. _cnodejs: http://cnodejs.org/
 .. _NAE: http://cnodejs.net/
@@ -34,9 +36,10 @@
 .. _Google: http://zh.wikipedia.org/wiki/Google
 .. _Google Wave: http://zh.wikipedia.org/wiki/Google_Wave
 .. _V8: http://zh.wikipedia.org/wiki/V8_(JavaScript%E5%BC%95%E6%93%8E)
+.. _Chrome: http://zh.wikipedia.org/wiki/Google_Chrome
 .. _Chromium: http://zh.wikipedia.org/wiki/Chromium
 .. _ChromeiumOS: http://www.chromium.org/chromium-os
-.. _Chrome: http://zh.wikipedia.org/wiki/Google_Chrome
+.. _Chrome Web Store: http://en.wikipedia.org/wiki/Chrome_Web_Store
 .. _Web app.: http://en.wikipedia.org/wiki/Web_app
 
 .. _WebKit: http://zh.wikipedia.org/wiki/WebKit

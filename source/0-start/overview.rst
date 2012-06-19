@@ -427,7 +427,9 @@ Say you want to navigate the user's currently selected tab to a new URL.
 
 
 
-现在? 
+.. _chapter0overview4now:
+
+然后? 
 ------------------------------------------------------------------------------
 
 现在我们已大致了解了扩展程序，应该准备好编写自己的扩展了。
@@ -438,9 +440,6 @@ Say you want to navigate the user's currently selected tab to a new URL.
 - :ref:`调试教程 <chapter2debugging>`
 - :ref:`开发者指南 <chapter1index>`
 - :ref:`示例 <chapter4index>`
-
-
-
 
 
 
