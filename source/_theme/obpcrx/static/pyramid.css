@@ -10,7 +10,17 @@
  */
  
 @import url("basic.css");
- 
+/* -- 120625 ZQ appended for esp elements effect ----------------------------------------------------------- */
+
+cite{
+    font-size: 1.1em;
+    color: green;
+}
+dt {
+    font-style: bolder;
+    font-size: 1.1em;
+}
+
 /* -- page layout ----------------------------------------------------------- */
  
 body {
@@ -293,7 +303,6 @@ pre {
     border-right-style: none;
     border-left-style: none;
 }
- 
 tt {
     background-color: transparent;
     color: #222;

@@ -11,5 +11,5 @@
 
 .. toctree::
    
-
+    packagedapp.rst
 
