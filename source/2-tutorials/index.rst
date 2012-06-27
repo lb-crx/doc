@@ -3,13 +3,9 @@
 .. _chapter2index:
 
 
-扩展教程 (1/3)
+扩展教程 (2/3)
 ============================================
 
 
 .. include:: intro.rst
-
-.. toctree::
-   
-    packagedapp.rst
 

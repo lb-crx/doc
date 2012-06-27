@@ -40,7 +40,9 @@
 .. _Chromium: http://zh.wikipedia.org/wiki/Chromium
 .. _ChromeiumOS: http://www.chromium.org/chromium-os
 .. _Chrome Web Store: http://en.wikipedia.org/wiki/Chrome_Web_Store
+
 .. _Web app.: http://en.wikipedia.org/wiki/Web_app
+.. _Google文档列表数据API: https://developers.google.com/google-apps/documents-list
 
 .. _WebKit: http://zh.wikipedia.org/wiki/WebKit
 .. _Safari: http://zh.wikipedia.org/wiki/Safari
@@ -85,9 +87,3 @@
 .. _OBP工程: http://code.google.com/p/openbookproject
 .. _OBP流程: http://code.google.com/p/openbookproject/wiki/FlowSphinx
 .. _OBP参与: http://code.google.com/p/openbookproject/wiki/HowtoJoin
-
-.. 图片链接收集~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-
-

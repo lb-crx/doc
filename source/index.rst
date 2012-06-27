@@ -6,7 +6,7 @@ Google Chrome 扩展开发手册
 文档的快速翻译,旨在帮助大家开发自个儿想要的扩展插件!
 
 
-开发手册 (1/5)
+开发手册 (6/108)
 ------------------------
 
 
@@ -20,7 +20,7 @@ Google Chrome 扩展开发手册
     4-samples/index.rst
 
 
-工具手册 (0/3)
+工具手册 (0/14)
 ------------------------
 
 .. toctree::
@@ -39,9 +39,10 @@ Google Chrome 扩展开发手册
 .. include:: INTRODUCE.rst
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     AUTHORS.rst
     LICENSE.rst
     CHANGELOG.rst
+    TERMINOLOGY.rst
     README.rst

@@ -75,6 +75,16 @@ Shinx 说明
 
 
 
+外部下载::
+
+    See :download:`this example script <_static/examples/tutorials/getstarted/popup.js>`.
+
+
+效果:
+
+See :download:`this example script <_static/examples/tutorials/getstarted/popup.js>`.
+
+
 文本体例
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -129,7 +139,7 @@ Shinx 说明
 - 追随正文
 - 活动説明
 - 效果如右
-- ....
+- etc.....
 
 
 
