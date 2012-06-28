@@ -10,7 +10,8 @@ OAuth
 .. sidebar:: 推荐参考
     :subtitle: `OAuth`_ 标准文档
     
-    :rfc:`5849`
+    - :rfc:`5849`
+    - `The OAuth 2.0 Authorization Framework <http://tools.ietf.org/html/draft-ietf-oauth-v2-28>`_
 
 
 `OAuth`_ 是一种开放的协议,旨在标准化桌面与网上应用程序访问用户个人数据的方式. 
