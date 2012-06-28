@@ -6,7 +6,7 @@
 常见问题
 ===================
 
-如果您在这里找不到您的问题的答案，请尝试 `Chrome网上应用店常见问题 <https://code.google.com/chrome/webstore/faq.html>`_（英文）、 `网上论坛 <https://groups.google.com/a/chromium.org/group/chromium-extensions>`_ （英文）或 `网上应用店帮助 <https://www.google.com/support/chrome_webstore/?hl=zh-CN>`_ 帮助。
+如果您在这里找不到您的问题的答案，请尝试 `Chrome网上应用店常见问题 <https://code.google.com/chrome/webstore/faq.html>`_ （英文）、 `网上论坛 <https://groups.google.com/a/chromium.org/group/chromium-extensions>`_ （英文）或 `网上应用店帮助 <https://www.google.com/support/chrome_webstore/?hl=zh-CN>`_ 帮助。
 
 
 一般问题
@@ -89,23 +89,24 @@
     - 要确定Chrome的不同版本当前在各个不同平台上是否可用，请参见omahaproxy.appspot.com。
     - 在那一站点上您将会看到类似于如下形式的数据： 
 
-::
+    ::
 
-    cf,dev,#.#.###.#,#.#.###.#,mm/dd/yy,mm/dd/yy,#####,#####,#####
-    cf,beta,#.#.###.#,#.#.###.#,mm/dd/yy,mm/dd/yy,#####,#####,#####
-    cf,stable,#.#.###.#,#.#.###.#,mm/dd/yy,mm/dd/yy,#####,#####,#####
-    linux,dev,#.#.###.#,#.#.###.#,mm/dd/yy,mm/dd/yy,#####,#####,#####
-    linux,beta,#.#.###.#,#.#.###.#,mm/dd/yy,mm/dd/yy,#####,#####,#####
-    linux,stable,#.#.###.#,#.#.###.#,mm/dd/yy,mm/dd/yy,#####,#####,#####
-    mac,dev,#.#.###.#,#.#.###.#,mm/dd/yy,mm/dd/yy,#####,#####,#####
-    mac,beta,#.#.###.#,#.#.###.#,mm/dd/yy,mm/dd/yy,#####,#####,#####
-    mac,stable,#.#.###.#,#.#.###.#,mm/dd/yy,mm/dd/yy,#####,#####,#####
-    win,canary,#.#.###.#,#.#.###.#,mm/dd/yy,mm/dd/yy,#####,#####,#####
-    win,dev,#.#.###.#,#.#.###.#,mm/dd/yy,mm/dd/yy,#####,#####,#####
-    win,beta,#.#.###.#,#.#.###.#,mm/dd/yy,mm/dd/yy,#####,#####,#####
-    win,stable,#.#.###.#,#.#.###.#,mm/dd/yy,mm/dd/yy,#####,#####,#####
-    cros,dev,#.#.###.#,#.#.###.#,mm/dd/yy,mm/dd/yy,#####,#####,#####
-    cros,beta,#.#.###.#,#.#.###.#,mm/dd/yy,mm/dd/yy,#####,#####,#####
+        cf,dev,#.#.###.#,#.#.###.#,mm/dd/yy,mm/dd/yy,#####,#####,#####
+        cf,beta,#.#.###.#,#.#.###.#,mm/dd/yy,mm/dd/yy,#####,#####,#####
+        cf,stable,#.#.###.#,#.#.###.#,mm/dd/yy,mm/dd/yy,#####,#####,#####
+        linux,dev,#.#.###.#,#.#.###.#,mm/dd/yy,mm/dd/yy,#####,#####,#####
+        linux,beta,#.#.###.#,#.#.###.#,mm/dd/yy,mm/dd/yy,#####,#####,#####
+        linux,stable,#.#.###.#,#.#.###.#,mm/dd/yy,mm/dd/yy,#####,#####,#####
+        mac,dev,#.#.###.#,#.#.###.#,mm/dd/yy,mm/dd/yy,#####,#####,#####
+        mac,beta,#.#.###.#,#.#.###.#,mm/dd/yy,mm/dd/yy,#####,#####,#####
+        mac,stable,#.#.###.#,#.#.###.#,mm/dd/yy,mm/dd/yy,#####,#####,#####
+        win,canary,#.#.###.#,#.#.###.#,mm/dd/yy,mm/dd/yy,#####,#####,#####
+        win,dev,#.#.###.#,#.#.###.#,mm/dd/yy,mm/dd/yy,#####,#####,#####
+        win,beta,#.#.###.#,#.#.###.#,mm/dd/yy,mm/dd/yy,#####,#####,#####
+        win,stable,#.#.###.#,#.#.###.#,mm/dd/yy,mm/dd/yy,#####,#####,#####
+        cros,dev,#.#.###.#,#.#.###.#,mm/dd/yy,mm/dd/yy,#####,#####,#####
+        cros,beta,#.#.###.#,#.#.###.#,mm/dd/yy,mm/dd/yy,#####,#####,#####
+
 
     - 每一行代表不同平台和分支的组合信息。列出的平台包括cf（Google Chrome Frame）、linux、mac、win和cros（Google Chrome OS）。列出的分支包括canary、dev、beta和stable。分支后面分成四部分的数是部署至相应平台、分支组合的当前和前一个Chrome浏览器的版本号。剩下的信息是一些元数据，有关发行版最早开始的时间以及与每一次编译相关的修订版本。
 
