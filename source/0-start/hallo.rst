@@ -3,7 +3,7 @@
 .. _chapter0hallo:
 
 
-入门扩展
+扩展入门
 ====================
 
 这一简单的教程,将带领我们创作一个简单的扩展,
@@ -201,4 +201,4 @@ popup.js
 
 .. seealso:: (^.^)
     
-    原文: `Getting Started <http://code.google.com/chrome/extensions/trunk/getstarted.html>`_
+    原文: `Getting Started <http://code.google.com/chrome/extensions/getstarted.html>`_

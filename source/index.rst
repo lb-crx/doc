@@ -1,12 +1,15 @@
 
-Google Chrome 扩展开发手册
+Google Chrome 扩展技术手册
 ====================================
 
 这是官方 `Google Chrome Extensions <http://code.google.com/chrome/extensions/overview.html>`_
-文档的快速翻译,旨在帮助大家开发自个儿想要的扩展插件!
+以及相关文档的快速翻译,旨在帮助大家开发自个儿想要的扩展插件!
 
 
-开发手册 (6/108)
+.. include:: HelloThere.rst
+
+
+开发手册 (7/108)
 ------------------------
 
 
@@ -20,26 +23,20 @@ Google Chrome 扩展开发手册
     4-samples/index.rst
 
 
-工具手册 (0/14)
-------------------------
+:ref:`更多手册 <chapter5index>` (1/70)
+------------------------------------------------------------------------
+
 
 .. toctree::
     :maxdepth: 1
 
-    devtools/index.rst
-    devtools/idxdoc.rst
-    devtools/idxres.rst
-    devtools/contributing.rst
+    5-more/devtools/index.rst
+    5-more/hosted/index.rst
+    5-more/installable/index.rst
+    5-more/webstore/index.rst
+    5-more/FAQ.rst
+    5-more/Themes.rst
 
-
-
-其它手册 (1/?)
-------------------------
-
-.. toctree::
-    :maxdepth: 1
-
-    FAQ.rst
 
 
 翻译工程

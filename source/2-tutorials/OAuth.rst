@@ -244,3 +244,11 @@ URI、回调函数和可选的参数对象。
 
 
 
+
+
+
+.. seealso:: (^.^)
+    
+    原文: `Tutorial: Google Analytics <http://code.google.com/chrome/extensions/tut_oauth.html>`_
+
+

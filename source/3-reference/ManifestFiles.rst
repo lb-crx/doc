@@ -75,6 +75,8 @@ Field details
 
 
 
+.. _chapter3-Manifest-permissions:
+
     permissions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -99,5 +101,11 @@ Field details
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+
+
+
+.. seealso:: (^.^)
+    
+    原文: `Tutorial: Google Analytics <http://code.google.com/chrome/extensions/manifest.html>`_
 
 

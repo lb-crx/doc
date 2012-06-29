@@ -110,3 +110,10 @@
 - 遵循 :ref:`开发人员工具教程 <devtool0index>` ,浏览 `开发人员工具站点 <http://www.chromium.org/devtools>`_ (英文),并观看一些视频教程. 
 
 有关更多想法,请参见入门中的" :ref:`然后? <chapter0overview4now>` "部分. 
+
+
+
+.. seealso:: (^.^)
+    
+    原文: `Tutorial: Google Analytics <http://code.google.com/chrome/extensions/tut_debugging.html>`_
+

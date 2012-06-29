@@ -83,3 +83,10 @@ width:
 
 查阅: :ref:`概述 <chapter0overview>`  了解有关扩展程序的基本概念.
 
+
+
+.. seealso:: (^.^)
+    
+    原文: `Tutorial: Google Analytics <http://code.google.com/chrome/extensions/apps.html>`_
+
+

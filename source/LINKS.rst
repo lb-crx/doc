@@ -20,6 +20,7 @@
 .. _Lua: http://en.wikipedia.org/wiki/Lua_%28programming_language%29
 .. _正则表达式: http://zh.wikipedia.org/wiki/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F
 .. _JSON: http://zh.wikipedia.org/wiki/Json
+.. _SSL: http://zh.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E5%B1%82%E5%AE%89%E5%85%A8
 
 .. _reSTsections: http://sphinx.pocoo.org/rest.html#sections
 
@@ -51,6 +52,7 @@
 .. _JavaScript: https://developer.mozilla.org/en/JavaScript
 .. _JS: http://zh.wikipedia.org/wiki/JavaScript
 .. _HTML: http://zh.wikipedia.org/wiki/Html
+.. _HTTP: http://zh.wikipedia.org/wiki/Http
 
 .. _CoffeeScript: http://jashkenas.github.com/coffee-script/
 .. _Express: http://expressjs.com/

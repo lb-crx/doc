@@ -35,3 +35,12 @@ chrome.* APIs (0/15)
 -    webNavigation
 -    webRequest
 -    windows
+
+
+
+.. seealso:: (^.^)
+    
+    原文: `Tutorial: Google Analytics <http://code.google.com/chrome/extensions/api_index.html>`_
+
+
+

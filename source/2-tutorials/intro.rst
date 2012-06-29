@@ -11,3 +11,9 @@
 - :ref:`Google 分析 <chapter2Analytics>` ~ 追踪扩展的使用情况
 - :ref:`OAuth <chapter2OAuth>` ~ 如何通过 APIs 使用 `OAuth`_ . 此教程展示可以在扩展中使用 `OAuth`_ 的库.
 
+
+
+.. seealso:: (^.^)
+    
+    原文: `Tutorial: Google Analytics <http://code.google.com/chrome/extensions/tutorials.html>`_
+
