@@ -44,6 +44,6 @@ Finishing and distributing your extension
 
 - :ref:`自动更新 <chapter1-Autoupdating>`    Update extensions automatically
 - :ref:`发布托管 <chapter1-Hosting>`     Host extensions on Google servers or your own
-- Other Deployment Options    Distribute extensions on your network or with other software
-- Packaging   Create a .crx file so you can distribute your extension 
+- :ref:`其它部署选项 <chapter1-OtherDeploymentOptions>` Other Deployment Options    Distribute extensions on your network or with other software
+- :ref:`Packaging <chapter1-Packaging>`   Create a .crx file so you can distribute your extension 
 
