@@ -9,7 +9,7 @@ Google Chrome 扩展技术手册
 .. include:: HelloThere.rst
 
 
-开发手册 (7/108)
+开发手册 (8/108)
 ------------------------
 
 
@@ -23,7 +23,7 @@ Google Chrome 扩展技术手册
     4-samples/index.rst
 
 
-:ref:`更多手册 <chapter5index>` (1/70)
+:ref:`更多手册 <chapter5index>` (2/70)
 ------------------------------------------------------------------------
 
 
