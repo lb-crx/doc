@@ -26,7 +26,7 @@
 
 - 文件的内容类型为 `application/x-chrome-extension`
 - 文件的后缀为 `.crx` 并且以下条件 `全` 都成立：
-    - 文件 `没有` 如下HTTP头：`X-Content-Type-Options: nosniff`
+    - 文件 `没有` 如下HTTP头: ``X-Content-Type-Options: nosniff``
     - 文件的内容类型为以下的某一种：
         - 空字符串
         - "text/plain"
@@ -43,3 +43,8 @@
     - 不过,猎豹浏览器的扩展托管,可以更加简单
     - 因为我们可以通过对内核的定制,智能感知到是 `.crx` 文件,从而尝试下载后安装!
 
+
+
+.. seealso:: (^.^)
+    
+    原文: `Hosting <http://code.google.com/chrome/extensions/hosting.html>`_

@@ -1,4 +1,4 @@
-.. include:: ../LINKS.rst
+.. include:: ../../LINKS.rst
 
 .. _devtool1index:
 

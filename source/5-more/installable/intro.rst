@@ -1,4 +1,4 @@
-.. include:: ../LINKS.rst
+.. include:: ../../LINKS.rst
 
 What are installable web apps?
 

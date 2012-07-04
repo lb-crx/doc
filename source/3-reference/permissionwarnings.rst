@@ -1,1 +1,10 @@
-本章涉及其它值得参考的接口细节
+
+.. include:: ../LINKS.rst
+
+.. _chapter3-permissions:
+
+
+
+
+可选权限
+================

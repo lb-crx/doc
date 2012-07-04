@@ -16,6 +16,12 @@
 .. _MD5: http://zh.wikipedia.org/wiki/MD5
 .. _ZIP: http://zh.wikipedia.org/wiki/ZIP_(%E7%AE%97%E6%B3%95)
 .. _URL: http://zh.wikipedia.org/wiki/URL
+.. _Unique key: http://en.wikipedia.org/wiki/Unique_key
+.. _密钥对: http://en.wikipedia.org/wiki/Unique_key
+.. _Public-key: http://en.wikipedia.org/wiki/Private_key
+.. _私钥: http://en.wikipedia.org/wiki/Private_key
+.. _RSA: http://zh.wikipedia.org/wiki/RSA%E5%8A%A0%E5%AF%86%E6%BC%94%E7%AE%97%E6%B3%95
+.. _SHA-1: http://zh.wikipedia.org/wiki/SHA-1
 
 .. _Lua: http://en.wikipedia.org/wiki/Lua_%28programming_language%29
 .. _正则表达式: http://zh.wikipedia.org/wiki/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F
@@ -41,6 +47,8 @@
 .. _Chromium: http://zh.wikipedia.org/wiki/Chromium
 .. _ChromeiumOS: http://www.chromium.org/chromium-os
 .. _Chrome Web Store: http://en.wikipedia.org/wiki/Chrome_Web_Store
+.. _Chrome网上应用店: https://chrome.google.com/webstore/category/extensions
+.. _Chrome开发者信息中心: https://chrome.google.com/webstore/developer/dashboard?hl=zh-CN
 
 .. _Web app.: http://en.wikipedia.org/wiki/Web_app
 .. _Google文档列表数据API: https://developers.google.com/google-apps/documents-list
