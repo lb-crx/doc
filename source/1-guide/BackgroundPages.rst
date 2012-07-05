@@ -6,3 +6,13 @@
 
 Background Pages
 =============================
+
+
+
+
+
+.. seealso:: (^.^)
+    
+    原文: `Background Pages <http://code.google.com/chrome/extensions/background_pages.html>`_
+
+

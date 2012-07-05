@@ -291,6 +291,12 @@ p.admonition-title {
 p.admonition-title:after {
     content: ":";
 }
+
+div.compound{
+    padding: 5px;
+    border: 2px solid #C6C9CB;
+    background-color: #fafafa;
+}
  
 pre {
     padding: 10px;

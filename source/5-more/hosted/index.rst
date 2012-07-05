@@ -1,6 +1,6 @@
 .. include:: ../../LINKS.rst
 
-.. _chapter4index:
+.. _chapter4HostedApps:
 
 
 Hosted Apps (0/1)

@@ -2,8 +2,16 @@
 
 .. _chapter1-PageActions:
 
-    Page Actions
 
 
 Page Actions
 =============================
+
+
+
+
+.. seealso:: (^.^)
+    
+    原文: `Page Actions <http://code.google.com/chrome/extensions/pageAction.html>`_
+
+

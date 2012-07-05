@@ -194,3 +194,10 @@ Tab
 
 
 
+.. seealso:: (^.^)
+    
+    原文: `Types <http://code.google.com/chrome/extensions/trunk/tabs.html>`_
+
+
+
+

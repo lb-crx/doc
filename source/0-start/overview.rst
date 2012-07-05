@@ -97,6 +97,8 @@
 进一步有关扩展的发布,请参考: :ref:`Hosting <chapter1-Hosting>`
 
 
+.. _relative-urls::
+
 文件引用    Referring to files
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -104,9 +106,12 @@
 一般而言，同普通的HTML文件中那样通过相对地址来引用文件。
 下例演示了如何引用 `images` 子目录下的 `myimage.png`
 
-.. code-block:: html
 
-    <img src="images/myimage.png">
+.. code-block:: html
+    :emphasize-lines: 2
+
+    <img 
+      src="images/myimage.png">
 
 
 

@@ -10,6 +10,7 @@
 .. include:: intro.rst
 
 .. toctree::
+    :maxdepth: 1
    
     ManifestFiles.rst
     CRX.rst

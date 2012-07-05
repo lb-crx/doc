@@ -61,6 +61,8 @@
 .. _JS: http://zh.wikipedia.org/wiki/JavaScript
 .. _HTML: http://zh.wikipedia.org/wiki/Html
 .. _HTTP: http://zh.wikipedia.org/wiki/Http
+.. _Favicon: http://zh.wikipedia.org/wiki/Favicon
+.. _MIME: http://zh.wikipedia.org/wiki/MIME
 
 .. _CoffeeScript: http://jashkenas.github.com/coffee-script/
 .. _Express: http://expressjs.com/
