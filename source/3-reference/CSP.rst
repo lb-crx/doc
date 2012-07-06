@@ -32,3 +32,13 @@ Relaxing the default policy
 
 Tightening the default policy
 ------------------------------------------------------------------------------
+
+
+
+
+.. seealso:: (^.^)
+    
+    原文: `Content Security Policy (CSP) <http://code.google.com/chrome/extensions/crx.html>`_
+
+
+

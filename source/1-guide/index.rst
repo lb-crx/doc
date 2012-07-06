@@ -13,7 +13,8 @@
     :maxdepth: 1
 
     BrowserActions.rst
-    DesktopNotifications.rst
+    ContextMenus.rst
+    Notifications.rst
     Omnibox.rst
     OptionsPages.rst
     OverridePages.rst

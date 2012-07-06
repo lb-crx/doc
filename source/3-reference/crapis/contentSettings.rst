@@ -1,10 +1,10 @@
 .. include:: ../../LINKS.rst
 
-.. _api4bookmarks:
+.. _api4contentSettings:
 
 
 
-chrome.bookmarks
+chrome.contentSettings
 ====================================
 
 
@@ -12,6 +12,5 @@ chrome.bookmarks
 
 .. seealso:: (^.^)
     
-    原文: `chrome.bookmarks <http://code.google.com/chrome/extensions/bookmarks.html>`_
-
+    原文: `chrome.contentSettings <http://code.google.com/chrome/extensions/contentSettings.html>`_
 

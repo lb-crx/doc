@@ -329,7 +329,7 @@ nacl_modules
 每一 `MIME`_ 类型可以与一个 `.nmf`文件结合.
 不过,一个 `.nmf` 文件可处理多个 `MIME`_ 类型.
 
-下面的例子显示了两个 `.nmf`文件处理三个 `MIME`_ 类型的扩展。
+下面的例子显示了两个 `.nmf` 文件处理三个 `MIME`_ 类型的扩展。
 
 
 .. code-block:: js
@@ -412,29 +412,238 @@ permissions
     和 `"unlimitedStorage"` 权限，但不能使用下表列出的其它任何权限。
 
 
+.. list-table:: 扩展可指定权限
+   :widths: 15 50
+   :header-rows: 1
+
+   * - 权限
+     - 描述
+   * - 匹配表达式
+     - 指定主机权限。如果扩展程序需要与页面上运行的代码交互则必须指定该权限。许多扩展程序的能力，例如 :ref:`跨站XMLHttpRequest <chapter1-XHR>` 、以编程方式插入 :ref:`内容脚本 <chapter1-ContentScripts>` 以及 :ref:`Cookie API <api4cookies>` 需要主机权限。有关语法上的细节，请参见 :ref:`匹配表达式 <chapter3-MatchPatterns>`
+   * - "background"
+     - 让Chrome很早就启动很晚才退出，以便应用程序和扩展程序可以有更长的生命周期。 :
+        当任何已安装的托管应用程序、打包应用程序或扩展程序拥有 `"background"` 权限时，Chrome浏览器在用户登录计算机时就（不可见地）运行，那时用户还没有亲自执行Chrome浏览器。 `"background"` 权限也使Chrome浏览器继续运行（即使在最后一个窗口已经关闭后），直到用户主动退出Chrome浏览器。
+        
+        **注意：** 已禁用的应用程序以及扩展程序以未安装对待。
+        
+        通常您与 :ref:`后台页面 <chapter1-BackgroundPages>` 或者（对于托管应用程序） `后台窗口 <https://code.google.com/chrome/apps/docs/background.html>`_ （英文）一起使用 `"background"` 权限。
+
+   * - "bookmarks"
+     - 如果扩展程序使用 :ref:`chrome.bookmarks <chapter1-BrowserActions>` 模块则必须指定该权限。
+   * - "chrome://favicon/"
+     - 如果扩展程序使用chrome://favicon/url机制来显示页面的收藏夹图标则必须指定该权限。
+
+        例如，要显示http://www.google.com/的收藏夹图标，您声明"chrome://favicon/"权限，并使用如下所示的HTML代码：
+
+        `<img src="chrome://favicon/http://www.google.com/">`
+
+
+   * - "clipboardRead"
+     - 如果扩展程序使用 `document.execCommand('paste')`则必须指定该权限
+   * - "clipboardWrite"
+     - 指定应用程序或扩展程序可以使用 `document.execCommand('copy')` 或 `document.execCommand('cut')` 。 `托管` 应用程序 **必须** 指定该权限，同时建议扩展程序和打包应用程序指定该权限。
+   * - "contentSettings"
+     - 如果扩展程序使用 :ref:`chrome.contentSettings <api4contentSettings>` 模块则必须指定该权限
+   * - "contextMenus"
+     - 如果扩展程序使用 :ref:`chrome.contextMenus <chapter1-ContextMenus>` 模块则必须指定该权限
+   * - "cookies" 
+     - 如果扩展程序使用 :ref:`chrome.cookies <api4cookies>` 模块则必须指定该权限
+   * - "experimental" 
+     - 如果扩展程序使用 :ref:`chrome.experimental.* APIs <api4experimental>` 模块则必须指定该权限
+   * - "fileBrowserHandler"
+     - 如果扩展程序使用 :ref:`chrome.fileBrowserHandler <api4fileBrowserHandler>` 模块则必须指定该权限
+   * - "geolocation"
+     - 允许扩展程序使用提出的HTML5 `地理位置API <http://dev.w3.org/geo/api/spec-source.html>`_ 而不用提示用户
+   * - "history"
+     - 如果扩展程序使用 :ref:`chrome.history <api4history>` 模块则必须指定该权限
+   * - "idle"
+     - 如果扩展程序使用 :ref:`chrome.idle <api4idle>` 模块则必须指定该权限
+   * - "management"
+     - 如果扩展程序使用 :ref:`chrome.management <api4management>` 模块则必须指定该权限
+   * - "notifications"
+     - 允许扩展程序使用提出的HTML5 `通知API <http://www.chromium.org/developers/design-documents/desktop-notifications/api-specification>`_ 而不需要调用方法请求权限（例如: `checkPermission()` ）。有关更多信息请参见 :ref:`桌面通知 <chapter1-DesktopNotifications>`
+   * - "pageCapture"
+     - 如果扩展程序使用 :ref:`chrome.pageCapture <api4pageCapture>` 模块则必须指定该权限
+   * - "privacy"
+     - 如果扩展程序使用 :ref:`chrome.privacy <api4privacy>` 模块则必须指定该权限
+   * - "proxy"
+     - 如果扩展程序使用 :ref:`chrome.proxy <api4proxy>` 模块则必须指定该权限
+   * - "tabs"
+     - 如果扩展程序使用 :ref:`chrome.tabs <chapter1-Tabs>` 或 :ref:`chrome.windows <chapter1-Windows>` 模块则必须指定该权限
+   * - "tts"
+     - 如果扩展程序使用 :ref:`chrome.tts <api4tts>` 模块则必须指定该权限
+   * - "ttsEngine"
+     - 如果扩展程序使用 :ref:`chrome.tts <api4ttsEngine>` 模块则必须指定该权限
+   * - "unlimitedStorage"
+     - 提供无限的存储空间，保存HTML5客户端数据，例如数据库以及本地存储文件。如果没有这一权限，扩展程序的本地存储将限制在5MB以内。
+
+        **注意：** 该权限仅应用于Web SQL数据库以及应用程序缓存（参见问题 `58985 <http://crbug.com/58985>`_ ）。另外，当前还不能使用含有通配符的子域名，例如 `http://*.example.com`
+   * - "webNavigation"
+     - 如果扩展程序使用 :ref:`chrome.webNavigation <api4webNavigation>` 模块则必须指定该权限
+   * - "webRequest"
+     - 如果扩展程序使用 :ref:`chrome.webRequest <api4webRequest>` 模块则必须指定该权限
+   * - "webRequestBlocking"
+     - 如果扩展程序使用 :ref:`chrome.webRequest <api4webRequest>` 模块则必须指定该权限
+
+
 
 .. _manifest-requirements:
 
 requirements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+应用程序或扩展程序要求的技术。托管站点（例如 `Chrome网上应用店`_ ）可能会使用这一列表建议用户不要安装不能在他们的计算机上工作的应用程序或者扩展程序。
+
+目前唯一支持的要求为"3D"，代表GPU硬件加速。对于这一要求，可以如下面的例子所示，列出应用程序要求的3D相关的功能：
+
+::
+
+    "requirements": {
+      "3D": {
+        "features": ["css3d", "webgl"]
+      }
+    }
+
+
+`"css3d"` 要求指的是 `CSS 3D变换规范 <https://sites.google.com/>`_（英文）， 
+`"webgl"` 要求指的是 `WebGL API <https://sites.google.com/>`_（英文）。
+有关Chrome浏览器对3D图形支持的更多信息，请参见有关
+`WebGL和3D图形 <https://support.google.com/chrome/bin/answer.py?hl=zh-Hans&answer=1220892>`_
+的帮助文章。
+对于更多不同要求的检查可能会在将来增加。
+
+
 .. _manifest-version:
 
 version
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+一至四个用点（半角英文句号）分开的整数，标识扩展程序的版本。这些整数应该符合这两条规则：范围在0-65535之间（包括0和65535），非零整数不能以0开头。例如99999和032都是无效的。
+如下是一些有效的版本号的例子：
+
+- `"version": "1"`
+- `"version": "1.0"`
+- `"version": "2.10.2"`
+- `"version": "3.1.2.4567"`
+
+自动更新系统比较版本号来确定已安装的某个扩展程序是否需要更新。如果已发布的扩展程序比已安装的扩展程序有更新的版本字符串，该扩展程序将会自动更新。
+比较将从最左边的整数开始。如果相等，比较右边的整数，以此类推。例如，1.2.0比1.1.9.9999新。
+省略整数的等于零，例如1.1.9.9999比1.1新。
+有关更多信息，请参见 :ref:`自动更新 <chapter1-Autoupdating>`
+
 
 .. _manifest-mversion:
 
 manifest_version
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+指定扩展程序包要求的清单文件格式的版本。
+从Chrome 18开始，开发人员应该指定2（不加引号），使用本文档描述的格式： ::
+
+    "manifest_version": 2
+
+从Chrome 18开始，认为清单文件版本1已弃用，版本2目前还不是必需的，
+但在不远的将来某一时刻，将不再支持使用已弃用清单文件版本的扩展程序包。
+
+还没有准备转换至Chrome 18中新的清单文件版本的扩展程序、应用程序以及主题背景既可以明确地指定版本1，也可以完全省略该属性。
+
+清单文件格式版本1与版本2之间的改变在 :ref:`manifest_version文档 <chapter3-manifestVersion>` 中详细描述。
+
+
+.. warning:: (#_#)
+
+    - 不建议在Chrome 17或更低版本中设置 `manifest_version 2`
+    - 如果扩展程序需要在较旧版本的Chrome浏览器中运行，目前请继续使用版本1，在版本1停止工作前将会给出充分的警告。
+
+
+
 .. _manifest-accessible:
 
 web_accessible_resources
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+字符串数组，指定扩展程序包内可以在网页中使用的资源路径（相对于扩展程序包的根目录）。
+例如，为了在example.com上建立自定义界面，而插入内容脚本的扩展程序可以将界面需要的所有资源
+（图片、图标、样式表、脚本等等）加入白名单，如下所示：
+
+::
+
+    {
+      ...
+      "web_accessible_resources": [
+        "images/my-awesome-image1.png",
+        "images/my-amazing-icon1.png",
+        "style/double-rainbow.css",
+        "script/double-rainbow.js"
+      ],
+      ...
+    }
+
+这些资源将可以通过 `URL`_ `chrome-extension://[扩展程序包的标识符]/[路径]` 使用，
+`URL`_ 可以通过 :ref:`chrome.extension.getURL <Extension-getURL>` 方法产生。
+加入白名单的资源将以合适的 `CORS <http://www.w3.org/TR/cors/>`_ 头信息提供，
+所以它们可以通过XHR之类的机制使用。
+
+插入的内容脚本本身不需要加入白名单。
 
 
+默认情况:
+  - 使用 `manifest_version 2` 或更高的扩展程序包内的资源 **默认情况下被阻止** ，必须通过这一属性加入白名单。
+  - 使用 `manifest_version 1` 的扩展程序包内的资源默认情况下可用，但是只要您设置了这一属性，它将以所有加入白名单资源的完整列表来对待，没有列出的资源将被阻止
+
+
+
+sandbox
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+`新:` `r140689 <https://src.chromium.org/viewvc/chrome?view=rev&sortby=rev&sortdir=down&revision=140689>`_
+
+
+
+要在受沙箱保护的唯一来源中载入的页面路径（相对于扩展程序包根目录）列表，还可以指定可选的内容安全策略来一起使用。
+在沙箱中意味着如下两点：
+
+#. 受沙箱保护的页面不能访问扩展程序或应用程序API，也不能直接访问沙箱外的页面（但是可以通过postMessage()进行通信）。
+#. 受沙箱保护的页面不受应用程序或扩展程序其余部分使用的 :ref:`内容安全策略（CSP） <chapter3-CSP>` 所限制。这就意味着，它可以使用内嵌脚本与 `eval`
+
+例如，如下代码指定两个扩展程序页面将在沙箱中载入，并指定了自定义的
+:ref:`CSP <chapter3-CSP>`  ： ::
+
+    {
+      ...
+      "sandbox": {
+        "pages": [
+          "page1.html",
+          "directory/page2.html"
+        ]
+        // 内容安全策略是可选的。
+        "content_security_policy":
+            "sandbox allow-scripts; script-src https://www.google.com"
+      ],
+      ...
+    }
+
+
+如果没有指定的话，默认的 `content_security_policy` 值为
+`sandbox allow-scripts allow-forms` 。
+可以指定自己的CSP值来更进一步限制沙箱，但是它必须包含sandbox指示符，
+并且 **不能** 包含 `allow-same-origin` 记号
+（有关可能的沙箱记号，请参考: `相应的HTML5规范 <http://www.whatwg.org/specs/web-apps/current-work/multipage/the-iframe-element.html#attr-iframe-sandbox>`_ ）。
+
+
+.. note:: 注意
+
+    - 只需要列出我们期望在窗口或框架中载入的页面。
+    - 受沙箱保护的页面所使用的资源（例如样式表或 `JavaScript`_ 源文件）不需要出现在 `sandbox` 列表中，它们会使用内嵌它们的页面所使用的沙箱。
+    - 只有使用 `manifest_version 2` 或更高版本时才能指定受沙箱保护的页面。
+
+
+
+
+.. seealso:: 子页面
+    
+    - :ref:`内容安全策略（CSP） <chapter3-CSP>`
+    - :ref:`清单文件版本 <chapter3-manifestVersion>`
 
 
 .. seealso:: (^.^)

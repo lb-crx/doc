@@ -1,6 +1,6 @@
 .. include:: ../LINKS.rst
 
-.. _chapter1-CrossOriginXMLHttpRequest:
+.. _chapter1-XHR:
 
 
 

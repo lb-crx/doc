@@ -1,6 +1,6 @@
 .. include:: ../../LINKS.rst
 
-.. _api4history:
+.. _api4management:
 
 
 
