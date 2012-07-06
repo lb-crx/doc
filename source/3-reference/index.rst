@@ -3,7 +3,7 @@
 .. _chapter3index:
 
 
-参考资料 (1/7)
+参考资料 (2/38)
 ============================================
 
 
@@ -16,6 +16,7 @@
     CRX.rst
     permissionwarnings.rst
     chromeAPIs.rst
+    Experimental.rst
     othersAPIs.rst
     liebaoAPIs.rst
     CSP.rst

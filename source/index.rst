@@ -9,7 +9,7 @@ Google Chrome 扩展技术手册
 .. include:: HelloThere.rst
 
 
-开发手册 (10/112)
+开发手册 (10/142)
 ------------------------
 
 
