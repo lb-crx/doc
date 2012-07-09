@@ -2,8 +2,6 @@
 
 .. _chapter1-BrowserActions:
 
-    Browser Actions
-
 
 Browser Actions
 =============================
