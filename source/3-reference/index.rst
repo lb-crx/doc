@@ -3,7 +3,7 @@
 .. _chapter3index:
 
 
-参考资料 (2/38)
+参考资料 (5/38)
 ============================================
 
 
@@ -13,11 +13,12 @@
     :maxdepth: 1
    
     ManifestFiles.rst
+    CSP.rst
+    manifestVersion.rst
     CRX.rst
     permissionwarnings.rst
     chromeAPIs.rst
     Experimental.rst
     othersAPIs.rst
     liebaoAPIs.rst
-    CSP.rst
 
