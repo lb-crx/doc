@@ -5,7 +5,7 @@
 
 .. seealso:: (^.^)
     
-    原文: `Tutorial: Google Analytics <http://code.google.com/chrome/extensions/samples.html>`_
+    原文: `Samples <http://code.google.com/chrome/extensions/samples.html>`_
 
     
     
