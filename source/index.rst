@@ -38,6 +38,16 @@ Google Chrome 扩展技术手册
     5-more/Themes.rst
 
 
+猎豹专用手册
+------------------------------------------------------------------------
+
+.. toctree::
+    :maxdepth: 1
+
+    3-reference/liebaoAPIs.rst
+    5-more/lb4crx/index.rst
+
+
 
 翻译工程
 ------------------------

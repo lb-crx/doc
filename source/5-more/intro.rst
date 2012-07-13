@@ -8,6 +8,7 @@
     hosted/index.rst
     installable/index.rst
     webstore/index.rst
+    lb4crx/index.rst
 
     FAQ.rst
 
