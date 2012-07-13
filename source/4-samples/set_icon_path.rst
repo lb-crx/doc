@@ -3,7 +3,7 @@
 .. _sample4set_icon_path:
 
 
-A browser action which changes its icon when clicked.
+点击时改变图标的browser action
 ==============================================================================
 
 Uses `background_page`, `browser_action` and `tabs`
