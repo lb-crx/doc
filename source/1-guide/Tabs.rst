@@ -16,30 +16,48 @@ Examples
 Methods
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. _Tabs-captureVisibleTab:
+
+
     captureVisibleTab
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. _Tabs-connect:
 
     connect
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-.. _Tabs.create:
+
+.. _Tabs-create:
 
     create
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+
+.. _Tabs-detectLanguage:
+
     detectLanguage
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+
+.. _Tabs-executeScript:
+
     executeScript
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. _Tabs-get:
 
     get
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
+
+.. _Tabs-getSelected:
+
 getSelected
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-.. _Tabs.getSelected:
 
 
 .. warning:: (#_#)
@@ -49,33 +67,56 @@ getSelected
 
 
 
+
+.. _Tabs-getCurrent:
+
 getCurrent
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. _Tabs-highlight:
 
     highlight
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+
+.. _Tabs-insertCSS:
+
     insertCSS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-    move
+
+.. _Tabs-insertCSS:
+
+    insertCSS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. _Tabs-query:
 
     query
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+
+.. _Tabs-reload:
+
     reload
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. _Tabs-remove:
 
     remove
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
+
+.. _Tabs-sendMessage:
+
 sendMessage
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-.. _Tabs.sendMessage:
 
 
 chrome.tabs.sendMessage(integer tabId, any message, function responseCallback)
@@ -106,10 +147,11 @@ response
     The JSON response object sent by the handler of the message. If an error occurs while connecting to the specified tab, the callback will be called with no arguments and chrome.extension.lastError will be set to the error message.
 
 
+
+.. _Tabs-update:
+
     update
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-.. _Tabs.update:
 
 .. js:function:: chrome.tabs.update(integer tabId, object updateProperties, function callback)
 
@@ -148,35 +190,60 @@ tab
 ( optional Tab )
     Details about the updated tab, or null if the 'tabs' permission has not been requested.
 
+
+
 Events
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. _Tabs-onActivated:
 
     onActivated
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
+
+.. _Tabs-onAttached:
+
     onAttached
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. _Tabs-onCreated:
 
     onCreated
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
+.. _Tabs-onDetached:
+
     onDetached
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+
+
+.. _Tabs-onHighlighted:
 
     onHighlighted
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
+
+.. _Tabs-onMoved:
+
     onMoved
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
+
+.. _Tabs-onRemoved:
+
     onRemoved
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+
+
+.. _Tabs-onUpdated:
 
     onUpdated
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -189,6 +256,9 @@ Types
 
 .. _Tabs.Types:
 
+
+
+.. _Tabs-Tab:
 
 Tab
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

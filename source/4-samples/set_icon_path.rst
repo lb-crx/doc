@@ -3,10 +3,10 @@
 .. _sample4set_icon_path:
 
 
-点击时改变图标的browser action
+browser action:点击时改变图标
 ==============================================================================
 
-Uses `background_page`, `browser_action` and `tabs`
+运用 `background_page`, `browser_action` and `tabs`
 
 调用:
 ------------------------------------------------------------------------------
