@@ -12,7 +12,5 @@
 .. toctree::
     :maxdepth: 1
 
-    set_icon_path.rst
-    set_page_color.rst
 
 
