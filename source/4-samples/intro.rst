@@ -37,8 +37,14 @@
         下载:
             - :download:`make_page_red.zip <../_static/examples/api/browserAction/make_page_red.zip>` 
 
+   * - |sample-default|
+     - :ref:`可接受语言 <sample4accept_language>`
 
-
+        调用:
+            - :ref:`chrome.i18n.getAcceptLanguages <i18n-getAcceptLanguages>`
+            - :ref:`chrome.i18n.getMessage <i18n-getMessage>`
+        下载:
+            - :download:`getMessage.zip <../_static/examples/api/i18n/getMessage.zip>` 
 
 
 
