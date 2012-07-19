@@ -46,6 +46,20 @@
         下载:
             - :download:`getMessage.zip <../_static/examples/api/i18n/getMessage.zip>` 
 
+   * - |sample-default|
+     - :ref:`页面动画行为 <sample4animated_page_action>`
+
+        调用:
+            - :ref:`chrome.pageAction.hide <PageActions-hide>`
+            - :ref:`chrome.pageAction.onClicked <PageActions-onClicked>`
+            - :ref:`chrome.pageAction.setIcon <PageActions-setIcon>`
+            - :ref:`chrome.pageAction.setTitle <PageActions-setTitle>`
+            - :ref:`chrome.pageAction.show <PageActions-show>`
+            - :ref:`chrome.tabs.get <Tabs-get>`
+            - :ref:`chrome.tabs.getSelected <Tabs-getSelected>`
+            - :ref:`chrome.tabs.executeScript <Tabs-executeScript>`
+        下载:
+            - :download:`set_icon.zip <../_static/examples/api/pageAction/set_icon.zip>` 
 
 
 .. seealso:: (^.^)
