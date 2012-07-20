@@ -3,7 +3,7 @@
 .. _chapter5webstore:
 
 
-Chrome Web Store (0/20)
+Chrome Web Store (1/20)
 ============================================
 
 
