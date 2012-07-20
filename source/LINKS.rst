@@ -16,6 +16,7 @@
 .. _MD5: http://zh.wikipedia.org/wiki/MD5
 .. _ZIP: http://zh.wikipedia.org/wiki/ZIP_(%E7%AE%97%E6%B3%95)
 .. _URL: http://zh.wikipedia.org/wiki/URL
+.. _DOM: http://zh.wikipedia.org/wiki/%E6%96%87%E4%BB%B6%E7%89%A9%E4%BB%B6%E6%A8%A1%E5%9E%8B
 .. _Unique key: http://en.wikipedia.org/wiki/Unique_key
 .. _密钥对: http://en.wikipedia.org/wiki/Unique_key
 .. _Public-key: http://en.wikipedia.org/wiki/Private_key

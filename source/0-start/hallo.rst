@@ -14,6 +14,7 @@
 .. figure:: ../_static/images/hello-world-small.png
 
 
+   
 在 `Chrome`_ 平台的支持下,
 我们的扩展可以平滑运行在任何 `Chrome`_ 兼容的浏览器中,以及任何操作系统中!
 而扩展本身不用修订任何代码!

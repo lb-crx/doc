@@ -192,6 +192,14 @@ rST排版技巧
    插图 2-4 命令行测试情景
 
 
+.. image:: _static/figs/tmux-curl-test.png
+   :height: 50px
+   :width: 50px
+   :alt: alternate text
+   :align: right
+
+
+
 上下标号
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

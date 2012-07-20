@@ -9,13 +9,18 @@ Developer's Guide (0/9)
 
 
 
+.. toctree::
+    :maxdepth: 1
 
-ChoosingAppType.rst
-MonetizingApp.rst
-I18nApp.rst
+    ChoosingAppType.rst
+    MonetizingApp.rst
+    I18nApp.rst
 
 
 Writing Code:
+
+.. toctree::
+    :maxdepth: 1
 
     IdentifyingUser.rst
     CheckingPayment.rst
@@ -24,8 +29,15 @@ Writing Code:
 
 Finishing Your App:
 
+.. toctree::
+    :maxdepth: 1
+
     SupplyingImages.rst
     Publishing.rst
 
-InlineInstall.rst
-BestPractices.rst
+
+.. toctree::
+    :maxdepth: 1
+
+    InlineInstall.rst
+    BestPractices.rst

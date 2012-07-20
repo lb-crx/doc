@@ -14,6 +14,7 @@ Documentation
 ------------------------------------------------------------------------------
 
 .. toctree::
+    :maxdepth: 1
 
     Overview.rst
     GettingStarted.rst
@@ -26,6 +27,7 @@ Resource
 ------------------------------------------------------------------------------
 
 .. toctree::
+    :maxdepth: 1
 
     Articles.rst
     Authentication.rst
