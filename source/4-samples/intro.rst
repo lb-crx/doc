@@ -61,6 +61,25 @@
         下载:
             - :download:`set_icon.zip <../_static/examples/api/pageAction/set_icon.zip>` 
 
+   * - |sample-default|
+     - :ref:`应用加载 <sample4app_launcher>`
+
+        调用:
+            - :ref:`chrome.extension.getURL <Extension-getURL>`
+            - :ref:`chrome.management.get <management-get>`
+            - :ref:`chrome.management.getAll <management-getAll>`
+            - :ref:`chrome.management.launchApp <management-launchApp>`
+            - :ref:`chrome.tabs.create <Tabs-create>`
+        下载:
+            - :download:`app_launcher.zip <../_static/examples/extensions/app_launcher.zip>` 
+
+
+
+
+
+
+
+
 
 .. seealso:: (^.^)
     
