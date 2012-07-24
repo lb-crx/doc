@@ -73,6 +73,11 @@
         下载:
             - :download:`app_launcher.zip <../_static/examples/extensions/app_launcher.zip>` 
 
+   * - |sample-default|
+     - :ref:`空白新标签页 <sample4blank_ntp>`
+
+        下载:
+            - :download:`blank_ntp.zip <../_static/examples/api/override/blank_ntp.zip>`
 
 
 
