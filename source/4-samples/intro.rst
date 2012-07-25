@@ -79,6 +79,14 @@
         下载:
             - :download:`blank_ntp.zip <../_static/examples/api/override/blank_ntp.zip>`
 
+   * - |sample-default|
+     - :ref:`拒绝/允许偏好API访问 <sample4enableReferrer>`
+
+        调用:
+            - :ref:`chrome.extension.isAllowedIncognitoAccess <Extension-isAllowedFileSchemeAccess>`
+        下载:
+            - :download:`enableReferrer.zip <../_static/examples/api/preferences/enableReferrer.zip>` 
+
 
 
 
