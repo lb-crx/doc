@@ -87,6 +87,14 @@
         下载:
             - :download:`enableReferrer.zip <../_static/examples/api/preferences/enableReferrer.zip>` 
 
+   * - |sample-default|
+     - :ref:`拒绝/允许第三方Cookies <sample4allowThirdPartyCookies>`
+
+        调用:
+            - :ref:`chrome.extension.isAllowedIncognitoAccess <Extension-isAllowedIncognitoAccess>`
+        下载:
+            - :download:`allowThirdPartyCookies.zip <../_static/examples/api/preferences/allowThirdPartyCookies.zip>` 
+
 
 
 

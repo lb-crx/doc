@@ -23,6 +23,8 @@
 .. _私钥: http://en.wikipedia.org/wiki/Private_key
 .. _RSA: http://zh.wikipedia.org/wiki/RSA%E5%8A%A0%E5%AF%86%E6%BC%94%E7%AE%97%E6%B3%95
 .. _SHA-1: http://zh.wikipedia.org/wiki/SHA-1
+.. _Cookie: http://zh.wikipedia.org/wiki/Cookie
+.. _Cookies: http://zh.wikipedia.org/wiki/Cookie
 
 .. _Lua: http://en.wikipedia.org/wiki/Lua_%28programming_language%29
 .. _正则表达式: http://zh.wikipedia.org/wiki/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F
