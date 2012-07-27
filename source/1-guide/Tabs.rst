@@ -19,37 +19,37 @@ Methods
 .. _Tabs-captureVisibleTab:
 
 
-    captureVisibleTab
+captureVisibleTab
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 .. _Tabs-connect:
 
-    connect
+connect
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 .. _Tabs-create:
 
-    create
+create
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 .. _Tabs-detectLanguage:
 
-    detectLanguage
+detectLanguage
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 .. _Tabs-executeScript:
 
-    executeScript
+executeScript
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 .. _Tabs-get:
 
-    get
+get
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
@@ -62,7 +62,7 @@ getSelected
 
 .. warning:: (#_#)
 
-    - 已经废除!
+- 已经废除!
 
 
 
@@ -76,39 +76,45 @@ getCurrent
 
 .. _Tabs-highlight:
 
-    highlight
+highlight
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 .. _Tabs-insertCSS:
 
-    insertCSS
+insertCSS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 .. _Tabs-insertCSS:
 
-    insertCSS
+insertCSS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 .. _Tabs-query:
 
-    query
+query
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 .. _Tabs-reload:
 
-    reload
+reload
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 .. _Tabs-remove:
 
-    remove
+remove
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+
+
+.. _Tabs-sendRequest:
+
+sendRequest
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -130,11 +136,11 @@ message
 ( any )
 responseCallback
 ( optional function )
-    Parameters
+Parameters
 
-    response
-    ( any )
-        The JSON response object sent by the handler of the message. If an error occurs while connecting to the specified tab, the callback will be called with no arguments and chrome.extension.lastError will be set to the error message.
+response
+( any )
+The JSON response object sent by the handler of the message. If an error occurs while connecting to the specified tab, the callback will be called with no arguments and chrome.extension.lastError will be set to the error message.
 
 Callback function
 
@@ -144,38 +150,38 @@ function(any response) {...};
 
 response
 ( any )
-    The JSON response object sent by the handler of the message. If an error occurs while connecting to the specified tab, the callback will be called with no arguments and chrome.extension.lastError will be set to the error message.
+The JSON response object sent by the handler of the message. If an error occurs while connecting to the specified tab, the callback will be called with no arguments and chrome.extension.lastError will be set to the error message.
 
 
 
 .. _Tabs-update:
 
-    update
+update
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 .. js:function:: chrome.tabs.update(integer tabId, object updateProperties, function callback)
 
-    Modifies the properties of a tab. Properties that are not specified in updateProperties are not modified. Note: This function can be used without requesting the 'tabs' permission in the manifest.
+Modifies the properties of a tab. Properties that are not specified in updateProperties are not modified. Note: This function can be used without requesting the 'tabs' permission in the manifest.
 
-    :param tabId: ( optional integer )
-        Defaults to the selected tab of the current window.
-    :param updateProperties:( object )
+:param tabId: ( optional integer )
+Defaults to the selected tab of the current window.
+:param updateProperties:( object )
 
-    url
-    ( optional string )
-        A URL to navigate the tab to.
-    active
-    ( optional boolean )
-        Whether the tab should be active.
-    highlighted
-    ( optional boolean )
-        Adds or removes the tab from the current selection.
-    pinned
-    ( optional boolean )
-        Whether the tab should be pinned.
-    openerTabId
-    ( optional integer )
-        The ID of the tab that opened this tab. If specified, the opener tab must be in the same window as this tab.
+url
+( optional string )
+A URL to navigate the tab to.
+active
+( optional boolean )
+Whether the tab should be active.
+highlighted
+( optional boolean )
+Adds or removes the tab from the current selection.
+pinned
+( optional boolean )
+Whether the tab should be pinned.
+openerTabId
+( optional integer )
+The ID of the tab that opened this tab. If specified, the opener tab must be in the same window as this tab.
 
 callback
 ( optional function )
@@ -188,7 +194,7 @@ function(Tab tab) {...};
 
 tab
 ( optional Tab )
-    Details about the updated tab, or null if the 'tabs' permission has not been requested.
+Details about the updated tab, or null if the 'tabs' permission has not been requested.
 
 
 
@@ -198,54 +204,54 @@ Events
 
 .. _Tabs-onActivated:
 
-    onActivated
+onActivated
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
 .. _Tabs-onAttached:
 
-    onAttached
+onAttached
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 .. _Tabs-onCreated:
 
-    onCreated
+onCreated
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 .. _Tabs-onDetached:
 
-    onDetached
+onDetached
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
 .. _Tabs-onHighlighted:
 
-    onHighlighted
+onHighlighted
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
 .. _Tabs-onMoved:
 
-    onMoved
+onMoved
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
 .. _Tabs-onRemoved:
 
-    onRemoved
+onRemoved
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
 .. _Tabs-onUpdated:
 
-    onUpdated
+onUpdated
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
@@ -267,8 +273,8 @@ Tab
 
 
 .. seealso:: (^.^)
-    
-    原文: `Types <http://code.google.com/chrome/extensions/trunk/tabs.html>`_
+
+原文: `Types <http://code.google.com/chrome/extensions/trunk/tabs.html>`_
 
 
 

@@ -95,6 +95,19 @@
         下载:
             - :download:`allowThirdPartyCookies.zip <../_static/examples/api/preferences/allowThirdPartyCookies.zip>` 
 
+   * - |sample-default|
+     - :ref:`断裂的链接 <sample4broken_links>`
+
+        调用:
+            - :ref:`chrome.experimental.devtools.audits.addCategory <devtools_audits-addCategory>`
+            - :ref:`chrome.extension.onRequest <Extension-onRequest>`
+            - :ref:`chrome.extension.sendRequest <Extension-sendRequest>`
+            - :ref:`chrome.tabs.executeScript <Tabs-executeScript>`
+            - :ref:`chrome.tabs.sendRequest <Tabs-sendRequest>`
+        下载:
+            - :download:`broken-links.zip <../_static/examples/api/devtools/audits/broken-links.zip>` 
+
+
 
 
 

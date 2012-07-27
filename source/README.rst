@@ -187,12 +187,12 @@ rST排版技巧
 
 
 .. _fig_2_4:
-.. figure:: _static/figs/tmux-curl-test.png
+.. figure:: _static/figs/tmux-working.png
 
    插图 2-4 命令行测试情景
 
 
-.. image:: _static/figs/tmux-curl-test.png
+.. image:: _static/figs/tmux-working.png
    :height: 50px
    :width: 50px
    :alt: alternate text

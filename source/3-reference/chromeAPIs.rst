@@ -37,6 +37,27 @@ chrome.* APIs (0/16)
 -    windows
 
 
+.. toctree::
+    :maxdepth: 1
+
+    crAPIs/Idle.rst
+    crAPIs/contentSettings.rst
+    crAPIs/cookies.rst
+    crAPIs/debugger.rst
+    crAPIs/fileBrowserHandler.rst
+    crAPIs/history.rst
+    crAPIs/infobars.rst
+    crAPIs/input.ime.rst
+    crAPIs/management.rst
+    crAPIs/pageCapture.rst
+    crAPIs/privacy.rst
+    crAPIs/proxy.rst
+    crAPIs/tts.rst
+    crAPIs/ttsEngine.rst
+    crAPIs/types.rst
+    crAPIs/webNavigation.rst
+    crAPIs/webRequest.rst
+
 
 .. seealso:: (^.^)
     
