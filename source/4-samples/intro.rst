@@ -108,8 +108,13 @@
             - :download:`broken-links.zip <../_static/examples/api/devtools/audits/broken-links.zip>` 
 
 
+   * - |sample-default|
+     - :ref:`屏蔽喵! <sample4catblock>`
 
-
+        调用:
+            - :ref:`chrome.webRequest.onBeforeRequest <webRequest-onBeforeSendHeaders>`
+        下载:
+            - :download:`catblock.zip <../_static/examples/extensions/catblock.zip>`  
 
 
 
