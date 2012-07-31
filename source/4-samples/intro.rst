@@ -116,6 +116,13 @@
         下载:
             - :download:`catblock.zip <../_static/examples/extensions/catblock.zip>`  
 
+   * - |sample-default|
+     - :ref:`Chrome 元素查询 <sample4chrome_query>`
+
+        下载:
+            - :download:`chrome-query.zip <../_static/examples/api/devtools/panels/chrome-query.zip>` 
+
+
 
 
 
