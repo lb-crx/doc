@@ -3,6 +3,9 @@
 本章收集各种简单的样例,并附可用代码,帮助开发者从一个正确的基础上完成自己的想法...
 
 .. |sample-default| image:: ../_static/images/sample-default-icon.png
+.. |fx-icon| image:: ../_static/examples/extensions/fx/icon.png
+   :height: 64px
+
 
 
 
@@ -123,6 +126,29 @@
             - :download:`chrome-query.zip <../_static/examples/api/devtools/panels/chrome-query.zip>` 
 
 
+   * - |fx-icon|
+     - :ref:`Chrome 音效 <sample4fx>`
+
+        调用:
+            - :ref:`chrome.bookmarks.onCreated <Bookmarks-onCreated>`
+            - :ref:`chrome.bookmarks.onMoved <Bookmarks-onMoved>`
+            - :ref:`chrome.bookmarks.onRemoved <Bookmarks-onRemoved>`
+            - :ref:`chrome.extension.getBackgroundPage <Extension-getBackgroundPage>`
+            - :ref:`chrome.extension.onRequest <Extension-onRequest>`
+            - :ref:`chrome.extension.sendRequest <Extension-sendRequest>`
+            - :ref:`chrome.tabs.get <Tabs-get>`
+            - :ref:`chrome.tabs.onAttached <Tabs-onAttached>`
+            - :ref:`chrome.tabs.onCreated <Tabs-onCreated>`
+            - :ref:`chrome.tabs.onDetached <Tabs-onDetached>`
+            - :ref:`chrome.tabs.onMoved <Tabs-onMoved>`
+            - :ref:`chrome.tabs.onRemoved <Tabs-onRemoved>`
+            - :ref:`chrome.tabs.onSelectionChanged <Tabs-onSelectionChanged>`
+            - :ref:`chrome.tabs.onUpdated <Tabs-onUpdated>`
+            - :ref:`chrome.windows.onCreated <Windows-onCreated>`
+            - :ref:`chrome.windows.onFocusChanged <Windows-onFocusChanged>`
+            - :ref:`chrome.windows.onRemoved <Windows-onRemoved>`
+        下载:
+            - :download:`fx.zip <../_static/examples/extensions/fx.zip>` 
 
 
 

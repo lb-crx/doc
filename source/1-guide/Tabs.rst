@@ -249,6 +249,33 @@ onRemoved
 
 
 
+.. _Tabs-onSelectionChanged:
+
+onSelectionChanged
+""""""""""""""""""""""""""""""""""""""""
+
+弃用
+.. warning:: ToT
+
+    弃用!
+
+
+chrome.tabs.onSelectionChanged.addListener(function(integer tabId, object selectInfo) {...}));
+
+::
+
+    当一个窗口中选定的标签页更改时发生。
+    事件处理函数参数
+    tabId ( integer )
+
+        新选定标签页的标识符。
+
+    selectInfo ( object )
+
+        windowId ( integer )
+
+            选定标签页更改所在的窗口的标识符。
+
 .. _Tabs-onUpdated:
 
 onUpdated
