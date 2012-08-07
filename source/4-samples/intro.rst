@@ -5,6 +5,8 @@
 .. |sample-default| image:: ../_static/images/sample-default-icon.png
 .. |fx-icon| image:: ../_static/examples/extensions/fx/icon.png
    :height: 64px
+.. |buildbot| image:: ../_static/examples/extensions/buildbot/icon.png
+   :height: 64px
 
 
 
@@ -125,7 +127,6 @@
         下载:
             - :download:`chrome-query.zip <../_static/examples/api/devtools/panels/chrome-query.zip>` 
 
-
    * - |fx-icon|
      - :ref:`Chrome 音效 <sample4fx>`
 
@@ -149,6 +150,17 @@
             - :ref:`chrome.windows.onRemoved <Windows-onRemoved>`
         下载:
             - :download:`fx.zip <../_static/examples/extensions/fx.zip>` 
+
+   * - |buildbot|
+     - :ref:`Chromium的Buildbot监察器 <sample4buildbot>`
+
+        调用:
+            - :ref:`chrome.browserAction.setBadgeBackgroundColor <BrowserActions-setBadgeBackgroundColor>`
+            - :ref:`chrome.browserAction.setBadgeText <BrowserActions-setBadgeText>`
+            - :ref:`chrome.browserAction.setTitle <BrowserActions-setTitle>`
+            - :ref:`chrome.extension.getURL <Extension-getURL>`
+        下载:
+            - :download:`buildbot.zip <../_static/examples/extensions/buildbot.zip>` 
 
 
 

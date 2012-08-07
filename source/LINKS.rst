@@ -1,49 +1,56 @@
 .. 图书链接统一定义文件!
 .. 成员相关链接~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. _Zoom.Quiet: http://code.google.com/p/openbookproject/wiki/ZoomQuiet
-.. 外部链接收集~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. _42: http://en.wikipedia.org/wiki/42_(number)
 
+.. 外部链接收集~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. _Gmail: http://zh.wikipedia.org/wiki/GMail
-.. _crx: http://code.google.com/chrome/extensions/getstarted.html
 
 .. _Inkscape: http://inkscape.org/
+.. _Buildbot: http://trac.buildbot.net/
 
+.. _reSTsections: http://sphinx.pocoo.org/rest.html#sections
 .. 常用工具 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. _tmux: http://www.linuxtoy.org/archives/from-screen-to-tmux.html
 .. _git: http://progit.org/book/zh/
+.. _Lua: http://en.wikipedia.org/wiki/Lua_%28programming_language%29
+
+.. 常见概念 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. _ZIP: http://zh.wikipedia.org/wiki/ZIP_(%E7%AE%97%E6%B3%95)
+
 .. _SSH: http://zh.wikipedia.org/zh/SSH
 .. _MD5: http://zh.wikipedia.org/wiki/MD5
-.. _ZIP: http://zh.wikipedia.org/wiki/ZIP_(%E7%AE%97%E6%B3%95)
-.. _URL: http://zh.wikipedia.org/wiki/URL
-.. _DOM: http://zh.wikipedia.org/wiki/%E6%96%87%E4%BB%B6%E7%89%A9%E4%BB%B6%E6%A8%A1%E5%9E%8B
 .. _Unique key: http://en.wikipedia.org/wiki/Unique_key
 .. _密钥对: http://en.wikipedia.org/wiki/Unique_key
 .. _Public-key: http://en.wikipedia.org/wiki/Private_key
 .. _私钥: http://en.wikipedia.org/wiki/Private_key
 .. _RSA: http://zh.wikipedia.org/wiki/RSA%E5%8A%A0%E5%AF%86%E6%BC%94%E7%AE%97%E6%B3%95
 .. _SHA-1: http://zh.wikipedia.org/wiki/SHA-1
+
+.. _JSON: http://zh.wikipedia.org/wiki/Json
+.. _SSL: http://zh.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E5%B1%82%E5%AE%89%E5%85%A8
+.. _URL: http://zh.wikipedia.org/wiki/URL
+.. _DOM: http://zh.wikipedia.org/wiki/%E6%96%87%E4%BB%B6%E7%89%A9%E4%BB%B6%E6%A8%A1%E5%9E%8B
 .. _Cookie: http://zh.wikipedia.org/wiki/Cookie
 .. _Cookies: http://zh.wikipedia.org/wiki/Cookie
 
-.. _Lua: http://en.wikipedia.org/wiki/Lua_%28programming_language%29
 .. _正则表达式: http://zh.wikipedia.org/wiki/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F
-.. _JSON: http://zh.wikipedia.org/wiki/Json
-.. _SSL: http://zh.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E5%B1%82%E5%AE%89%E5%85%A8
 
-.. _reSTsections: http://sphinx.pocoo.org/rest.html#sections
-
+.. 常用服务 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. _OAuth: http://zh.wikipedia.org/wiki/OAuth
+
 
 .. node相关 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. _cnodejs: http://cnodejs.org/
 .. _NAE: http://cnodejs.net/
 .. _node.js: http://nodejs.org/
 
+.. Borwser 相关 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. _浏览器战争: http://en.wikipedia.org/wiki/Browser_wars
 .. _猎豹浏览器: http://www.liebao.cn/
 
 .. _Google: http://zh.wikipedia.org/wiki/Google
+.. _crx: http://code.google.com/chrome/extensions/getstarted.html
 .. _Google Wave: http://zh.wikipedia.org/wiki/Google_Wave
 .. _V8: http://zh.wikipedia.org/wiki/V8_(JavaScript%E5%BC%95%E6%93%8E)
 .. _Chrome: http://zh.wikipedia.org/wiki/Google_Chrome
