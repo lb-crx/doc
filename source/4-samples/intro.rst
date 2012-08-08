@@ -162,6 +162,22 @@
         下载:
             - :download:`buildbot.zip <../_static/examples/extensions/buildbot.zip>` 
 
+   * - |sample-default|
+     - :ref:`Chromium 搜索 <sample4chrome_search>`
+
+        调用:
+            - :ref:`chrome.omnibox.onInputCancelled <Omnibox-onInputCancelled>`
+            - :ref:`chrome.omnibox.onInputChanged <Omnibox-onInputChanged>`
+            - :ref:`chrome.omnibox.onInputEntered <Omnibox-onInputEntered>`
+            - :ref:`chrome.omnibox.onInputStarted <Omnibox-onInputStarted>`
+            - :ref:`chrome.omnibox.setDefaultSuggestion <Omnibox-setDefaultSuggestion>`
+            - :ref:`chrome.tabs.get <Tabs-get>`
+            - :ref:`chrome.tabs.getSelected <Tabs-getSelected>`
+            - :ref:`chrome.tabs.update <Tabs-update>`
+        下载:
+            - :download:`chrome_search.zip <../_static/examples/extensions/chrome_search.zip>` 
+
+
 
 
 
