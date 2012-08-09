@@ -19,7 +19,7 @@ browser action:使用弹出窗口改变页面颜色
 源码:
 ------------------------------------------------------------------------------
 
-- manifest.json
+- `manifest.json`
 
 
 .. code-block:: js
@@ -40,7 +40,7 @@ browser action:使用弹出窗口改变页面颜色
     }
 
 
-- popup.html
+- `popup.html`
 
 
 .. code-block:: html
@@ -103,7 +103,7 @@ browser action:使用弹出窗口改变页面颜色
     </html>
 
 
-- popup.js
+- `popup.js`
 
 .. code-block:: js
   :emphasize-lines: 6,11-12

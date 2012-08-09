@@ -19,7 +19,7 @@
 源码:
 ------------------------------------------------------------------------------
 
-- messages.json
+- `messages.json`
 
 .. code-block:: js
   :emphasize-lines: 5
@@ -40,7 +40,7 @@
 
 
 
-- popup.html
+- `popup.html`
 
 .. code-block:: html
   :emphasize-lines: 5,10,13
@@ -75,7 +75,7 @@
 
 
 
-- popup.js
+- `popup.js`
 
 .. code-block:: js
   :emphasize-lines: 6,54,67,75
@@ -209,7 +209,7 @@
     document.addEventListener('DOMContentLoaded', init);
 
 
-- popup.css
+- `popup.css`
 
 .. code-block:: css
 

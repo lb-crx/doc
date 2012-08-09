@@ -177,7 +177,19 @@
         下载:
             - :download:`chrome_search.zip <../_static/examples/extensions/chrome_search.zip>` 
 
+   * - |sample-default|
+     - :ref:`CLD <sample4cld>`
 
+
+        调用:
+            - :ref:`chrome.browserAction.setBadgeText <BrowserActions-setBadgeText>`
+            - :ref:`chrome.tabs.detectLanguage <Tabs-detectLanguage>`
+            - :ref:`chrome.tabs.get <Tabs-get>`
+            - :ref:`chrome.tabs.getSelected <Tabs-getSelected>`
+            - :ref:`chrome.tabs.onSelectionChanged <Tabs-onSelectionChanged>`
+            - :ref:`chrome.tabs.onUpdated <Tabs-onUpdated>`
+        下载:
+            - :download:`cld.zip <../_static/examples/api/i18n/cld.zip>`
 
 
 

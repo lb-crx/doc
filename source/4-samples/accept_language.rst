@@ -18,7 +18,7 @@
 源码:
 ------------------------------------------------------------------------------
 
-- _locales/en_US/messages.json
+- `_locales/en_US/messages.json`
 
 .. code-block:: js
   :emphasize-lines: 21-23
@@ -52,7 +52,7 @@
     }
 
 
-- _locales/es/messages.json (`西班牙`)
+- `_locales/es/messages.json` (`西班牙`)
 
 .. code-block:: js
   :emphasize-lines: 21-23
@@ -86,7 +86,7 @@
     }
 
 
-- _locales/sr/messages.json (`塞尔维亚`)
+- `_locales/sr/messages.json` (`塞尔维亚`)
 
 .. code-block:: js
   :emphasize-lines: 18-20
@@ -118,7 +118,7 @@
 
 
 
-- manifest.json
+- `manifest.json`
 
 
 .. code-block:: js
@@ -138,7 +138,7 @@
     }
 
 
-- popup.html
+- `popup.html`
 
 .. code-block:: html
   :emphasize-lines: 18-19
@@ -169,7 +169,7 @@
 
 
 
-- popup.js
+- `popup.js`
 
 .. code-block:: js
   :emphasize-lines: 10,14-17

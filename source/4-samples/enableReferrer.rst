@@ -23,7 +23,7 @@
 
 
 
-- manifest.json
+- `manifest.json`
 
 
 .. code-block:: js
@@ -42,7 +42,7 @@
     }
 
 
-- popup.html
+- `popup.html`
 
 .. code-block:: html
   :emphasize-lines: 4-5,10
@@ -74,16 +74,7 @@
     </html>
 
 
-
-
-
-
-
-
-
-
-
-- popup.js
+- `popup.js`
 
 .. code-block:: js
   :emphasize-lines: 6,64,67,75
@@ -218,7 +209,7 @@
 
 
 
-- popup.css
+- `popup.css`
 
 .. code-block:: css
 

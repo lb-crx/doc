@@ -21,7 +21,7 @@
 源码:
 ------------------------------------------------------------------------------
 
-- messages.json
+- `messages.json`
 
 .. code-block:: js
   :emphasize-lines: 9
@@ -43,7 +43,7 @@
 
 
 
-- loldogs.js
+- `loldogs.js`
 
 .. code-block:: js
 
@@ -101,7 +101,7 @@
     ];
 
 
-- background.js
+- `background.js`
 
 .. code-block:: js
   :emphasize-lines: 8

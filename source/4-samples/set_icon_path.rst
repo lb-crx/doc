@@ -17,7 +17,7 @@ browser action:点击时改变图标
 源码:
 ------------------------------------------------------------------------------
 
-- background.js
+- `background.js`
 
 .. code-block:: js
   :emphasize-lines: 2,10,17,18
@@ -42,7 +42,7 @@ browser action:点击时改变图标
     updateIcon();
 
 
-- manifest.json
+- `manifest.json`
 
 
 .. code-block:: js
