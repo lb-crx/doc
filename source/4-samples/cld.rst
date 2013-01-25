@@ -50,18 +50,15 @@ CLD
 
 
 
-
-
-
 - `background.js`
 
-    .. code-block:: js
-      :emphasize-lines: 7,11,15,20,25
+
+.. code-block:: js
+  :emphasize-lines: 7,11,15,20,25
 
     // Copyright (c) 2009 The Chromium Authors. All rights reserved. Use of this
     // source code is governed by a BSD-style license that can be found in the
     // LICENSE file.
-
     var selectedId = -1;
     function refreshLanguage() {
       chrome.tabs.detectLanguage(null, function(language) {
@@ -86,6 +83,8 @@ CLD
       selectedId = tab.id;
       refreshLanguage();
     });
+
+
 
 
 
