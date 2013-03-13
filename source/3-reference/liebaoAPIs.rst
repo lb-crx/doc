@@ -1,10 +1,14 @@
 .. include:: ../LINKS.rst
 
-.. _chapter3-liebaoapi:
+.. _chapter3-lbthemerefernce:
 
 
+猎豹自制接口手册
+==============================================================================
 
-LB.* APIs
-=============================
+.. include:: lbAPIs/intro.rst
 
-本章涉及其它值得参考的接口细节
+.. toctree::
+    :maxdepth: 1
+
+    lbAPIs/themes.rst

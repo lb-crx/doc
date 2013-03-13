@@ -3,14 +3,69 @@
 .. _Zoom.Quiet: http://code.google.com/p/openbookproject/wiki/ZoomQuiet
 .. _42: http://en.wikipedia.org/wiki/42_(number)
 
+.. 工程链接收集~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. 外部链接收集~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. Borwser 相关 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. _浏览器战争: http://en.wikipedia.org/wiki/Browser_wars
+.. _猎豹浏览器: http://www.liebao.cn/
+
+.. _Google: http://zh.wikipedia.org/wiki/Google
 .. _Gmail: http://zh.wikipedia.org/wiki/GMail
 
+.. _Chrome扩展手册: http://developer.chrome.com/extensions
+
+.. _crx: http://code.google.com/chrome/extensions/getstarted.html
+.. _Google Wave: http://zh.wikipedia.org/wiki/Google_Wave
+.. _V8: http://zh.wikipedia.org/wiki/V8_(JavaScript%E5%BC%95%E6%93%8E)
+.. _Chrome: http://zh.wikipedia.org/wiki/Google_Chrome
+.. _Chromium: http://zh.wikipedia.org/wiki/Chromium
+.. _ChromeiumOS: http://www.chromium.org/chromium-os
+.. _Chrome Web Store: http://en.wikipedia.org/wiki/Chrome_Web_Store
+.. _Chrome网上应用店: https://chrome.google.com/webstore/category/extensions
+.. _Chrome网上样式店: <https://chrome.google.com/webstore/category/themes
+
+.. _Web app.: http://en.wikipedia.org/wiki/Web_app
+.. _Google文档列表数据API: https://developers.google.com/google-apps/documents-list
+.. _Chrome开发者信息中心: https://chrome.google.com/webstore/developer/dashboard?hl=zh-CN
+
+.. _WebKit: http://zh.wikipedia.org/wiki/WebKit
+.. _Safari: http://zh.wikipedia.org/wiki/Safari
+.. _Apple: http://zh.wikipedia.org/wiki/%E8%98%8B%E6%9E%9C%E5%85%AC%E5%8F%B8
+
+.. _JavaScript: https://developer.mozilla.org/en/JavaScript
+.. _JS: http://zh.wikipedia.org/wiki/JavaScript
+.. _HTML: http://zh.wikipedia.org/wiki/Html
+.. _HTTP: http://zh.wikipedia.org/wiki/Http
+.. _Favicon: http://zh.wikipedia.org/wiki/Favicon
+.. _MIME: http://zh.wikipedia.org/wiki/MIME
+
+.. OS相关 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. _Solaris: http://zh.wikipedia.org/zh/Solaris_(%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F)
+
+.. web 2.0相关 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. _AJAX: https://developer.mozilla.org/en/AJAX
+.. _GFW: http://zh.wikipedia.org/wiki/Great_Firewall
+
+.. _SAE: http://sae.sina.com.cn/?m=devcenter
+.. _GAE: http://zh.wikipedia.org/wiki/GAE
+
+.. _PaaS: http://zh.wikipedia.org/wiki/PaaS
+.. _IaaS: http://zh.wikipedia.org/wiki/IaaS
+
+.. Py 相关 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. _Python: http://python.org
+.. _Pythonic: http://wiki.woodpecker.org.cn/moin/PythonIc
+.. _Python website: http://www.python.org
+.. _Python官网: http://www.python.org
+.. _PEP-8:  http://www.python.org/dev/peps/pep-0008/
+
+.. 常用工具 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. _reSTsections: http://sphinx.pocoo.org/rest.html#sections
 .. _Inkscape: http://inkscape.org/
 .. _Buildbot: http://trac.buildbot.net/
 
-.. _reSTsections: http://sphinx.pocoo.org/rest.html#sections
-.. 常用工具 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. _tmux: http://www.linuxtoy.org/archives/from-screen-to-tmux.html
 .. _git: http://progit.org/book/zh/
 .. _Lua: http://en.wikipedia.org/wiki/Lua_%28programming_language%29
@@ -45,35 +100,6 @@
 .. _NAE: http://cnodejs.net/
 .. _node.js: http://nodejs.org/
 
-.. Borwser 相关 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. _浏览器战争: http://en.wikipedia.org/wiki/Browser_wars
-.. _猎豹浏览器: http://www.liebao.cn/
-
-.. _Google: http://zh.wikipedia.org/wiki/Google
-.. _crx: http://code.google.com/chrome/extensions/getstarted.html
-.. _Google Wave: http://zh.wikipedia.org/wiki/Google_Wave
-.. _V8: http://zh.wikipedia.org/wiki/V8_(JavaScript%E5%BC%95%E6%93%8E)
-.. _Chrome: http://zh.wikipedia.org/wiki/Google_Chrome
-.. _Chromium: http://zh.wikipedia.org/wiki/Chromium
-.. _ChromeiumOS: http://www.chromium.org/chromium-os
-.. _Chrome Web Store: http://en.wikipedia.org/wiki/Chrome_Web_Store
-.. _Chrome网上应用店: https://chrome.google.com/webstore/category/extensions
-.. _Chrome开发者信息中心: https://chrome.google.com/webstore/developer/dashboard?hl=zh-CN
-
-.. _Web app.: http://en.wikipedia.org/wiki/Web_app
-.. _Google文档列表数据API: https://developers.google.com/google-apps/documents-list
-
-.. _WebKit: http://zh.wikipedia.org/wiki/WebKit
-.. _Safari: http://zh.wikipedia.org/wiki/Safari
-.. _Apple: http://zh.wikipedia.org/wiki/%E8%98%8B%E6%9E%9C%E5%85%AC%E5%8F%B8
-
-.. _JavaScript: https://developer.mozilla.org/en/JavaScript
-.. _JS: http://zh.wikipedia.org/wiki/JavaScript
-.. _HTML: http://zh.wikipedia.org/wiki/Html
-.. _HTTP: http://zh.wikipedia.org/wiki/Http
-.. _Favicon: http://zh.wikipedia.org/wiki/Favicon
-.. _MIME: http://zh.wikipedia.org/wiki/MIME
-
 .. _CoffeeScript: http://jashkenas.github.com/coffee-script/
 .. _Express: http://expressjs.com/
 
@@ -82,28 +108,8 @@
 .. _npm: http://npmjs.org/
 
 
-.. OS相关 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. _Solaris: http://zh.wikipedia.org/zh/Solaris_(%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F)
-
-.. web 2.0相关 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. _AJAX: https://developer.mozilla.org/en/AJAX
-.. _GFW: http://zh.wikipedia.org/wiki/Great_Firewall
-
-.. _SAE: http://sae.sina.com.cn/?m=devcenter
-.. _GAE: http://zh.wikipedia.org/wiki/GAE
-
-.. _PaaS: http://zh.wikipedia.org/wiki/PaaS
-.. _IaaS: http://zh.wikipedia.org/wiki/IaaS
-
-.. Py 相关 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. _Python: http://python.org
-.. _Pythonic: http://wiki.woodpecker.org.cn/moin/PythonIc
-.. _Python website: http://www.python.org
-.. _Python官网: http://www.python.org
-.. _PEP-8:  http://www.python.org/dev/peps/pep-0008/
 
 
-.. 工程链接收集~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. OBP相关链接~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. _OBP: http://code.google.com/p/openbookproject
 .. _OBP工程: http://code.google.com/p/openbookproject

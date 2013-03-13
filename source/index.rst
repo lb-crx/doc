@@ -1,8 +1,9 @@
+.. include:: LINKS.rst
 
-Google Chrome 扩展技术手册
+Chrome 扩展技术手册
 ====================================
 
-这是官方 `Google Chrome Extensions <http://code.google.com/chrome/extensions/overview.html>`_
+这是 `猎豹浏览器`_ 对 `Google`_ 官方 `Chrome扩展手册`_
 以及相关文档的快速翻译,旨在帮助大家开发自个儿想要的扩展插件!
 
 
@@ -59,6 +60,7 @@ Google Chrome 扩展技术手册
 
     AUTHORS.rst
     LICENSE.rst
-    CHANGELOG.rst
     TERMINOLOGY.rst
     README.rst
+
+.. include:: CHANGELOG.rst

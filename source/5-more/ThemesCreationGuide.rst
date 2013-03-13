@@ -1,19 +1,19 @@
 .. include:: ../LINKS.rst
 
-.. _chapter5Themes:
+.. _chapter5TCG:
 
 
-皮肤样式
+ThemesCreationGuide
 ==============================================================================
 
 .. |themes1| image:: ../_static/images/themes-1.gif
 .. |themes2| image:: ../_static/images/themes-2.gif
 .. |themes3| image:: ../_static/images/themes-3.gif
 
-皮肤样式是一种特殊的扩展程序，可以改变浏览器的外观。
-皮肤样式的打包与普通的扩展程序类似，只是不含 `JavaScript`_ 或 `HTML`_ 代码。
+主题背景是一种特殊的扩展程序，可以改变浏览器的外观。
+主题背景的打包与普通的扩展程序类似，只是不含 `JavaScript`_ 或 `HTML`_ 代码。
 
-您可以在 `Chrome网上样式店`_ 中寻找与尝试各种主题背景:
+您可以在 `Chrome网上应用店 <https://tools.google.com/chrome/intl/en/themes/>`_ 中寻找与尝试各种主题背景:
 
 =========== =========== ===========
  |themes1|   |themes2|   |themes3|
@@ -144,16 +144,10 @@ Google Chrome浏览器支持色调而不是图片，因为图片不一定能跨�
 ------------------------------------------------------------------------------
 
 由社区撰写的相关帮助文档在这里（英文）:
+    http://code.google.com/p/chromium/wiki/ThemeCreationGuide
 
-- `Theme Creation Guide <http://code.google.com/p/chromium/wiki/ThemeCreationGuide>`_
-- `Chrome Theme Reference <https://docs.google.com/Doc?docid=0Aa86IE02TBXPZGtzZDU0NV85ZnFocnQzZGo>`_
-    
-翻译:
-
-- :ref:`样式创建导引 <chapter5TCG>`
-- :ref:`样式规格手册 <chapter5TReference>`
 
 
 .. seealso:: (^.^)
     
-    原文: `Themes <http://code.google.com/chrome/extensions/themes.html>`_
+    原文: `Theme Creation Guide <https://code.google.com/p/chromium/wiki/ThemeCreationGuide>`_
