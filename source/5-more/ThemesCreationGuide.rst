@@ -3,79 +3,72 @@
 .. _chapter5TCG:
 
 
-ThemesCreationGuide
+主题样式创建手册 
 ==============================================================================
 
-.. |themes1| image:: ../_static/images/themes-1.gif
-.. |themes2| image:: ../_static/images/themes-2.gif
-.. |themes3| image:: ../_static/images/themes-3.gif
 
-主题背景是一种特殊的扩展程序，可以改变浏览器的外观。
-主题背景的打包与普通的扩展程序类似，只是不含 `JavaScript`_ 或 `HTML`_ 代码。
+官方文档中指出样式创建中要上 `*.cc` 代码中翻找相关信息,对于纯粹的设计人员而言,太囧!
+所以,需要一份清晰的手册,指引设计人员快速完成样式的设计.
 
-您可以在 `Chrome网上应用店 <https://tools.google.com/chrome/intl/en/themes/>`_ 中寻找与尝试各种主题背景:
-
-=========== =========== ===========
- |themes1|   |themes2|   |themes3|
-=========== =========== ===========
+所以,有了当前这份:ThemesCreationGuide ~ 主题样式创建手册!
 
 
+创建样式必须作的事儿
+---------------------------------------------------------------------
 
-清单文件 Manifest
-------------------------------------------------------------------------------
-以下是用于主题背景的manifest.json的例子：
 
-.. code-block:: js
-
-    {
-      "version": "2.6",
-      "name": "camo theme",
-      "theme": {
-        "images" : {
-          "theme_frame" : "images/theme_frame_camo.png",
-          "theme_frame_overlay" : "images/theme_frame_stripe.png",
-          "theme_toolbar" : "images/theme_toolbar_camo.png",
-          "theme_ntp_background" : "images/theme_ntp_background_norepeat.png",
-          "theme_ntp_attribution" : "images/attribution.png"
-        },
-        "colors" : {
-          "frame" : [71, 105, 91],
-          "toolbar" : [207, 221, 192],
-          "ntp_text" : [20, 40, 0],
-          "ntp_link" : [36, 70, 0],
-          "ntp_section" : [207, 221, 192],
-          "button_background" : [255, 255, 255]
-        },
-        "tints" : {
-          "buttons" : [0.33, 0.5, 0.47]
-        },
-        "properties" : {
-          "ntp_background_alignment" : "bottom"
-        }
-      }
-    }
+- 一个靠谱的文本编辑器是必须的(至少要有行号,语法样式等等支持,因为 Chrome 对非良构的 manifest.json是零容忍的, 对于M$用户Notepad++ 是个好选择,笔者推荐新兴跨平台编辑器 Sublime Text 2 )如果对 JSON 文本实在没有感觉,可以尝试在线样式制作工具,比如: http://www.themebeta.com/chrome-theme-creator-online.html
+- 一个靠谱的图像管理器,好工具能帮助你创造好内容,强烈推荐 Photoshop , 同时推荐正版免费软件 Gimp 或是 Paint. 
+- 如果你在使用 Photoshop, 就可以下载 `Chrome 窗口设计稿 <http://www.chromium.org/user-experience/visual-design/chrome_0.2_psd.zip>`_ 已经将不同元素整理到不同层,方便进行效果调整.
+- 运用一些颜色/模式/设计的创意原则,来控制样式的整体感观
+- 将你的成果打包,并通过以下渠道发布:
+    + 直接上传到 `Chrome网上样式店`_
+    + 使用 Chrome 打包,参考: :ref:`发布托管 <chapter1-Hosting>` 或是原文: `Hosting <https://developer.chrome.com/extensions/hosting.html>`_
+    + 自行制作 `.crx` , 参考: :ref:`打包 <chapter1-Packaging>` 或是原文: `Packaging <https://developer.chrome.com/extensions/packaging.html>`_
 
 
 
-颜色    colors
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-颜色以RGB形式表示。
-可以在
-`theme_service.cc <http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/themes/theme_service.cc>`_
-文件中 `kColor*` 字串部分找到可以在此使用的字符串。
 
-.. 具体不明
+相关工具的配合
+---------------------------------------------------------------------
 
 
-图像    images
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+See the help image, you'll see many things highlighted, with a number denoting each element. We will be using the numbers to denote/specify the part of the UI for which we are creating themes.
+.. _fig_5_t_1:
+.. figure:: ../_static/themes/crx-reference-screenhp.jpg
 
-图像资源使用相对于扩展程序根目录的路径。
-可替换 `theme_service.cc <http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/themes/theme_service.cc>`_
-文件中 `kThemeableImages` 指定的任何图片，只要将“IDR_”删除并将剩余字符转换为小写。
-例如，`IDR_THEME_NTP_BACKGROUND`
-（ `kThemeableImages` 用来指定新标签栏的背景）
-对应"theme_ntp_background"。
+    主题样式可指
+
+
+样式元素详述
+---------------------------------------------------------------------
+
+Image Elements
+^^^^^^^^^^^^^^^^^^^^^^^    
+
+Color Elements
+^^^^^^^^^^^^^^^^^^^^^^^    
+
+Tint Elements
+^^^^^^^^^^^^^^^^^^^^^^^    
+
+UI Property Elements
+^^^^^^^^^^^^^^^^^^^^^^^    
+
+
+
+Description of Elements
+--------------------------------------------------------------------------------------------
+
+Basic Theme Elements
+^^^^^^^^^^^^^^^^^^^^^^^    
+
+Advanced Theme Elements
+^^^^^^^^^^^^^^^^^^^^^^^    
+
+Packaging
+^^^^^^^^^^^^^^^^^^^^^^^    
+
 
 .. list-table:: 主题应用中可替换图片备查表
    :widths: 15 30
@@ -112,39 +105,6 @@ ThemesCreationGuide
    * - theme_window_control_background
      - 
 
-
-
-属性    properties
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-这一字段让我们可以指定诸如背景对齐、背景重复、替代标志等属性。
-
-有关进一步的名称以及其值，请参见
-`theme_service.cc <http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/themes/theme_service.cc>`_
-
-
-色调    tints
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-我们也可以指定应用于用户界面某些部分的色调，例如按钮框架和后台标签页。
-Google Chrome浏览器支持色调而不是图片，因为图片不一定能跨平台使用，并且在增加新按钮时不适用。
-有关您可以在"tints"中使用的字符串，在 `theme_service.cc中` 寻找 `kTint*`字符串。
-
-
-色调以色调-饱和度-亮度（HSL）的格式指定，使用0-1.0之间的浮点数：
-
-- `色调` 为绝对值，0和1为红色。
-- `饱和度` 相对于当前提供的图片。0.5表示 `没有变化`，0表示 `完全不饱和` ，1表示 `完全饱和` 。
-- `亮度` 也是相对的，0.5表示没有变化，0表示 `所有像素` 均为黑色，1表示 `所有像素` 均为白色。
-  
-还可以对任意HSL值使用 `-1.0` 表示没有变化。
-
-
-其它文档 Additional documentation 
-------------------------------------------------------------------------------
-
-由社区撰写的相关帮助文档在这里（英文）:
-    http://code.google.com/p/chromium/wiki/ThemeCreationGuide
 
 
 

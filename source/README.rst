@@ -75,6 +75,43 @@ Shinx 说明
 
 
 
+可以 用 `:emphasize-lines:` 指定高亮行::
+
+  .. code-block:: js
+    :emphasize-lines: 2,5-7
+
+      {
+        "name" : "Block/allow third-party cookies API example extension",
+        "version" : "0.1",
+        "description" : "Sample extension which demonstrates how to access a preference.",
+        "permissions": [ "privacy" ],
+        "browser_action": {
+           "default_icon": "advicedog.jpg",
+           "default_popup": "popup.html"
+        },
+        "manifest_version": 2
+      }
+
+
+
+效果:
+
+.. code-block:: js
+  :emphasize-lines: 2,5-7
+
+    {
+      "name" : "Block/allow third-party cookies API example extension",
+      "version" : "0.1",
+      "description" : "Sample extension which demonstrates how to access a preference.",
+      "permissions": [ "privacy" ],
+      "browser_action": {
+         "default_icon": "advicedog.jpg",
+         "default_popup": "popup.html"
+      },
+      "manifest_version": 2
+    }
+
+
 外部下载::
 
     See :download:`this example script <_static/examples/tutorials/getstarted/popup.js>`.

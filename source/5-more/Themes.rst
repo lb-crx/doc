@@ -26,6 +26,7 @@
 以下是用于主题背景的manifest.json的例子：
 
 .. code-block:: js
+  :emphasize-lines: 4-26
 
     {
       "version": "2.6",
@@ -57,64 +58,36 @@
 
 
 
-颜色    colors
+颜色   
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 颜色以RGB形式表示。
 可以在
 `theme_service.cc <http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/themes/theme_service.cc>`_
 文件中 `kColor*` 字串部分找到可以在此使用的字符串。
 
-.. 具体不明
+:download:`theme_service.cc <_static/themes/theme_service.cc>`.
 
 
-图像    images
+
+
+图像   
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-图像资源使用相对于扩展程序根目录的路径。
+图像资源使用相对于扩展根目录的路径。
 可替换 `theme_service.cc <http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/themes/theme_service.cc>`_
 文件中 `kThemeableImages` 指定的任何图片，只要将“IDR_”删除并将剩余字符转换为小写。
 例如，`IDR_THEME_NTP_BACKGROUND`
 （ `kThemeableImages` 用来指定新标签栏的背景）
 对应"theme_ntp_background"。
 
-.. list-table:: 主题应用中可替换图片备查表
-   :widths: 15 30
-   :header-rows: 1
+主题样式扩展中,应用中可替换图片备查,参考:
 
-   * - 名称
-     - 描述
-   * - theme_button_background
-     - 
-   * - theme_frame
-     - 
-   * - theme_frame_inactive
-     - 
-   * - theme_frame_incognito
-     - 
-   * - theme_frame_incognito_inactive
-     - 
-   * - theme_frame_overlay
-     - 
-   * - theme_frame_overlay_inactive
-     - 
-   * - theme_toolbar
-     - 
-   * - theme_tab_background
-     - 
-   * - theme_tab_background_incognito
-     - 
-   * - theme_tab_background_v
-     - 
-   * - theme_ntp_attribution
-     - 
-   * - theme_ntp_background
-     - 
-   * - theme_window_control_background
-     - 
+- :ref:`样式创建导引 <chapter5TCG>`
+- :ref:`样式规格手册 <chapter5TReference>`
 
 
 
-属性    properties
+属性
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 这一字段让我们可以指定诸如背景对齐、背景重复、替代标志等属性。
