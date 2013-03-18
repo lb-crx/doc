@@ -11,6 +11,9 @@
  
 @import url("basic.css");
 /* -- 120625 ZQ appended for esp elements effect ----------------------------------------------------------- */
+.tinywords{
+    font-size: 8px;
+}
 
 cite{
     font-size: 1.1em;

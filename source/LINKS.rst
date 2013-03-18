@@ -24,7 +24,7 @@
 .. _ChromeiumOS: http://www.chromium.org/chromium-os
 .. _Chrome Web Store: http://en.wikipedia.org/wiki/Chrome_Web_Store
 .. _Chrome网上应用店: https://chrome.google.com/webstore/category/extensions
-.. _Chrome网上样式店: <https://chrome.google.com/webstore/category/themes
+.. _Chrome主题皮肤店: <https://chrome.google.com/webstore/category/themes
 
 .. _Web app.: http://en.wikipedia.org/wiki/Web_app
 .. _Google文档列表数据API: https://developers.google.com/google-apps/documents-list
