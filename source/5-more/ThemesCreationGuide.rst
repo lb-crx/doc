@@ -79,53 +79,53 @@
      - :ref:`"theme_frame_inactive" <TCG-theme_frame_inactive>`
      - ~
    * - 1.2
-     - 区域同上,仅在"匿名模式"下窗口激活时生效
+     - 区域同上,但在"匿名模式"下窗口激活时生效
      - :ref:`"theme_frame_incognito" <TCG-theme_frame_incognito>`
      - ~
    * - 1.3
-     - 说明
-     - manifest.json 参数
-     - 建议尺寸(宽x高)
+     - 区域同上,但在"匿名模式"下窗口不活跃时生效
+     - :ref:`"theme_frame_incognito_inactive" <TCG-theme_frame_incognito_inactive>`
+     - ~
    * - 2
-     - 说明
-     - manifest.json 参数
-     - 建议尺寸(宽x高)
+     - 包含当前标签同工具栏一起的表现
+     - :ref:`"theme_toolbar" <TCG-theme_toolbar>`
+     - ∞ x 120
    * - 3
-     - 说明
-     - manifest.json 参数
-     - 建议尺寸(宽x高)
+     - 覆盖所有未激活标签区域
+     - :ref:`"theme_tab_background" <TCG-theme_tab_background>`
+     - ∞ x 65
    * - 3.1
-     - 说明
-     - manifest.json 参数
-     - 建议尺寸(宽x高)
+     - 区域同上,但浏览器在"匿名模式"下
+     - :ref:`"theme_tab_background_incognito" <TCG-theme_tab_background_incognito>`
+     - ~
    * - 4
-     - 说明
-     - manifest.json 参数
-     - 建议尺寸(宽x高)
+     - 标签背景,可以容纳各种事务*(规划中)
+     - :ref:`"theme_tab_background_v" <TCG-theme_tab_background_v>`
+     - ~
    * - 5
-     - 说明
-     - manifest.json 参数
-     - 建议尺寸(宽x高)
+     - 是主题样式的最大背景
+     - :ref:`"theme_ntp_background" <TCG-theme_ntp_background>`
+     - 最小也应是: 800x600
    * - 6
-     - 说明
-     - manifest.json 参数
-     - 建议尺寸(宽x高)
+     - 在frame 左侧顶层显示的图片
+     - :ref:`"theme_frame_overlay" <TCG-theme_frame_overlay>`
+     - 110 x 40
    * - 6.1
-     - 说明
-     - manifest.json 参数
-     - 建议尺寸(宽x高)
+     - 区域同前,仅在窗口不活跃时生效
+     - ref:`"theme_frame_overlay_inactive" <TCG-theme_frame_overlay_inactive>`
+     - ~
    * - 7
-     - 说明
-     - manifest.json 参数
-     - 建议尺寸(宽x高)
+     - 标签工具栏按钮背景
+     - :ref:`"theme_button_background" <TCG-theme_button_background>`
+     - 30 x 30
    * - 8
-     - 说明
-     - manifest.json 参数
-     - 建议尺寸(宽x高)
+     - 此图片将显示在"theme created by" 一节
+     - :ref:`"theme_ntp_attribution" <TCG-theme_ntp_attribution>`
+     - ~
    * - 9
-     - 说明
-     - manifest.json 参数
-     - 建议尺寸(宽x高)
+     - 窗口控制按钮背景(关闭,最小,,,)
+     - :ref:`"theme_window_control_background" <TCG-theme_window_control_background>`
+     - ~
 
 
 
