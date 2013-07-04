@@ -475,6 +475,270 @@ Packaging
 ^^^^^^^^^^^^^^^^^^^^^^^    
 
 
+demo: 轻简生活
+^^^^^^^^^^^^^^^^^^^^^^^    
+
+.. code-block:: json
+  :emphasize-lines: 2-5,4-26
+
+
+    {
+        "version": "1",
+        "manifest_version": 2,
+        "name": "轻简生活",
+        "theme": {
+            "images": {
+                "theme_frame": "i/theme_frame.png",
+                "theme_popupframe": "i/theme_popupframe_default.png",
+                "theme_frame_inactive": "i/theme_frame.png",
+
+                "theme_inactive_tab_left": "i/theme_inactive_tab_left.png",
+                "theme_inactive_tab_right": "i/theme_inactive_tab_right.png",
+                "theme_inactive_tab_center": "i/theme_inactive_tab_center.png",
+                "theme_active_tab_left": "i/theme_active_tab_left.png",
+                "theme_active_tab_right": "i/theme_active_tab_right.png",
+                "theme_active_tab_center": "i/theme_active_tab_center.png",
+                "newtab_btn_n": "i/newtab_btn_n.png",
+                "newtab_btn_h": "i/newtab_btn_h.png",
+                "newtab_btn_p": "i/newtab_btn_p.png",
+                "closetab_btn_n": "i/closetab_btn_n.png",
+                "closetab_btn_h": "i/closetab_btn_h.png",
+                "closetab_btn_p": "i/closetab_btn_p.png",
+
+                "tab_separator": "i/tab_separator.png",
+
+                "typical_frame": "i/typical_frame.png",
+                "typical_frame_inactive": "i/typical_frame_inactive.png",
+
+                "theme_menu_title": "i/menu_title_bkg.png",
+                "theme_menu_item_highlight": "i/menu_item_highlight.png",
+                "theme_menu_item_check_round": "i/menu_item_check_round.png",
+                "theme_menu_item_check_tick": "i/menu_item_check_tick.png",
+                "theme_menu_item_check_tick_select": "i/menu_item_check_tick_highlight.png",
+                "theme_menu_title_login_button_h": "i/menu_title_login_button_h.png",
+                "theme_menu_title_login_button_n": "i/menu_title_login_button_n.png",
+                "theme_menu_title_login_button_p": "i/menu_title_login_button_p.png",
+                "theme_menu_title_logo": "i/menu_title_logo.png",
+                "theme_menu_title_tab_button_cloud_h": "i/menu_title_tab_button_cloud_h.png",
+                "theme_menu_title_tab_button_cloud_n": "i/menu_title_tab_button_cloud_n.png",
+                "theme_menu_title_tab_button_cloud_p": "i/menu_title_tab_button_cloud_p.png",
+                "theme_menu_title_tab_button_info_h": "i/menu_title_tab_button_info_h.png",
+                "theme_menu_title_tab_button_info_n": "i/menu_title_tab_button_info_n.png",
+                "theme_menu_title_tab_button_info_p": "i/menu_title_tab_button_info_p.png",
+                "theme_menu_title_tab_button_main_h": "i/menu_title_tab_button_main_h.png",
+                "theme_menu_title_tab_button_main_n": "i/menu_title_tab_button_main_n.png",
+                "theme_menu_title_tab_button_main_p": "i/menu_title_tab_button_main_p.png",
+                "theme_menu_title_tab_splite": "i/menu_title_tab_splite.png",
+                "theme_menu_title_user_name_marker": "i/menu_title_user_name_marker.png",
+                "theme_menu_title_user_name_hover": "i/menu_title_user_name_hover.png",
+                "theme_menu_cloud_item_bookmark": "i/menu_cloud_item_bookmark.png",
+                "theme_menu_cloud_item_sync_loading": "i/menu_cloud_item_sync_loading.png",
+                "theme_location_bar_back_d": "i/location_bar_back_d.png",
+                "theme_location_bar_back_h": "i/location_bar_back_h.png",
+                "theme_location_bar_back_n": "i/location_bar_back_n.png",
+                "theme_location_bar_back_p": "i/location_bar_back_p.png",
+                "theme_location_bar_border_focus": "i/location_bar_border_focus.png",
+                "theme_location_bar_border_only_focus": "i/location_bar_border_only_focus.png",
+                "theme_location_bar_dropdown_button_h": "i/location_bar_dropdown_button_h.png",
+                "theme_location_bar_dropdown_button_n": "i/location_bar_dropdown_button_n.png",
+                "theme_location_bar_dropdown_button_p": "i/location_bar_dropdown_button_p.png",
+                "theme_location_bar_forward_d": "i/location_bar_forward_d.png",
+                "theme_location_bar_forward_h": "i/location_bar_forward_h.png",
+                "theme_location_bar_forward_n": "i/location_bar_forward_n.png",
+                "theme_location_bar_forward_p": "i/location_bar_forward_p.png",
+                "theme_location_bar_forward_withpay_h": "i/location_bar_forward_withpay_h.png",
+                "theme_location_bar_forward_withpay_n": "i/location_bar_forward_withpay_n.png",
+                "theme_location_bar_forward_withpay_p": "i/location_bar_forward_withpay_p.png",
+
+                "theme_location_bar_goto_h": "i/location_bar_goto_h.png",
+                "theme_location_bar_goto_n": "i/location_bar_goto_n.png",
+                "theme_location_bar_goto_p": "i/location_bar_goto_p.png",
+                "theme_location_bar_reload_h": "i/location_bar_reload_h.png",
+                "theme_location_bar_reload_n": "i/location_bar_reload_n.png",
+                "theme_location_bar_reload_p": "i/location_bar_reload_p.png",
+                "theme_location_bar_result_view_closebtn_h": "i/location_bar_result_view_closebtn_h.png",
+                "theme_location_bar_result_view_closebtn_n": "i/location_bar_result_view_closebtn_n.png",
+                "theme_location_bar_result_view_closebtn_selected_h": "i/location_bar_result_view_closebtn_selected_h.png",
+                "theme_location_bar_result_view_closebtn_selected_n": "i/location_bar_result_view_closebtn_selected_n.png",
+                "theme_location_bar_result_view_h_background": "i/location_bar_result_view_h_background.png",
+                "theme_location_bar_result_view_s_background": "i/location_bar_result_view_s_background.png",
+                "theme_location_bar_safebrowsing_warning": "i/location_bar_safebrowsing_warning.png",
+                "theme_location_bar_star": "i/location_bar_star.png",
+                "theme_location_bar_star_lit": "i/location_bar_star_lit.png",
+                "theme_location_bar_stop_d": "i/location_bar_stop_d.png",
+                "theme_location_bar_stop_h": "i/location_bar_stop_h.png",
+                "theme_location_bar_stop_n": "i/location_bar_stop_n.png",
+                "theme_location_bar_stop_p": "i/location_bar_stop_p.png",
+                "theme_searchbar_border_focus": "i/searchbar_border_focus.png",
+                "theme_searchbar_engs_icon_h": "i/searchbar_engs_icon_h.png",
+                "theme_searchbar_engs_icon_n": "i/searchbar_engs_icon_n.png",
+                "theme_searchbar_engs_icon_p": "i/searchbar_engs_icon_p.png",
+                "theme_searchbar_icon_h": "i/searchbar_icon_h.png",
+                "theme_searchbar_icon_n": "i/searchbar_icon_n.png",
+                "theme_searchbar_icon_p": "i/searchbar_icon_p.png",
+                "theme_searchbar_engs_is_default": "i/searchbar_engs_is_default.png",
+                "theme_tabstripbar_left_background": "i/theme_tabstripbar_left_background.png",
+                "theme_tabstripbar_right_background": "i/theme_tabstripbar_right_background.png",
+
+                "progress_button_background": "i/progress_button_background.png",
+                "ks_download": "i/download.png",
+                "ks_download_p": "i/download_p.png",
+                "ks_download_h": "i/download_h.png",
+                "ks_downloading": "i/downloading.png",
+                "ks_downloading_p": "i/downloading_p.png",
+                "ks_downliading_h": "i/downloading_h.png",
+                "progress_bottom_img": "i/progress_bottom_img.png",
+                "progress_top_img": "i/progress_top_img.png",
+                "progress_button_mask": "i/progress_button_mask.png",
+
+                "safety_n": "i/safety_n.png",
+                "safety_h": "i/safety_h.png",
+                "safety_p": "i/safety_p.png",
+
+                "safe_login_manager_btn_n": "i/safe_login_manager_btn_n.png",
+                "safe_login_manager_btn_h": "i/safe_login_manager_btn_h.png",
+                "safe_login_manager_btn_p": "i/safe_login_manager_btn_p.png",
+
+                "fav_button_n": "i/fav_button_n.png",
+                "fav_button_h": "i/fav_button_h.png",
+                "fav_button_p": "i/fav_button_p.png",
+
+                "skin_btn_n": "i/skin_button_n.png",
+                "skin_btn_h": "i/skin_button_h.png",
+                "skin_btn_p": "i/skin_button_p.png",
+
+                "multi_tab_preview_btn_n" : "i/multi_tab_preview_btn_n.png",
+                "multi_tab_preview_btn_h" : "i/multi_tab_preview_btn_h.png",
+                "multi_tab_preview_btn_p" : "i/multi_tab_preview_btn_p.png",
+
+                "min_btn_n": "i/min_button_n.png",
+                "min_btn_h": "i/min_button_h.png",
+                "min_btn_p": "i/min_button_p.png",
+
+                "max_btn_n": "i/max_button_n.png",
+                "max_btn_h": "i/max_button_h.png",
+                "max_btn_p": "i/max_button_p.png",
+
+                "restore_btn_n": "i/restore_button_n.png",
+                "restore_btn_h": "i/restore_button_h.png",
+                "restore_btn_p": "i/restore_button_p.png",
+
+                "close_btn_n": "i/close_button_n.png",
+                "close_btn_h": "i/close_button_h.png",
+                "close_btn_p": "i/close_button_p.png",
+
+                "home_btn_n": "i/homepage_n.png",
+                "home_btn_h": "i/homepage_h.png",
+                "home_btn_p": "i/homepage_p.png",
+
+                "undo_btn_n": "i/undo_button_n.png",
+                "undo_btn_d": "i/undo_button_d.png",
+                "undo_btn_p": "i/undo_button_p.png",
+                "undo_btn_h": "i/undo_button_h.png",
+
+                "icon_button_mask": "i/account_mask.png",
+                "account_btn_icon": "i/account_icon.png",
+                "account_failed_btn_icon": "i/account_failed_icon.png",
+                "cloud_btn_icon": "i/cloud_icon.png",
+                "cloud_failed_btn_icon": "i/cloud_failed_icon.png",
+                "message_btn_icon": "i/message_icon.png",
+                "account_rotate": "i/account_rotate.png",
+                "account_breath": "i/account_breath.png",
+                "icon_button_edge_n": "i/account_edge_n.png",
+                "icon_button_edge_h": "i/account_edge_h.png",
+                "icon_button_edge_p": "i/account_edge_h.png",
+
+
+                "dialog_bg": "i/dialog_bg.png",
+                "throbber_waiting": "i/loading.png",
+
+                "bookmark_bar_folder": "i/bookmark_bar_folder.png",
+                "bookmark_btn_bk_h": "i/bookmark_btn_bk_h.png",
+                "bookmark_btn_bk_p": "i/bookmark_btn_bk_p.png",
+                "default_fav_icon": "i/default_fav_icon.png",
+
+                "dialog_button_n": "i/dialog_button_n.png",
+                "dialog_button_h": "i/dialog_button_h.png",
+                "dialog_button_p": "i/dialog_button_p.png",
+                "bubble_button_n": "i/bubble_button_n.png",
+                "bubble_button_h": "i/bubble_button_h.png",
+                "bubble_button_p": "i/bubble_button_p.png",
+
+                "check_n": "i/check_n.png",
+                "check_h": "i/check_h.png",
+                "check_p": "i/check_p.png",
+                "check_u_n": "i/check_u_n.png",
+                "check_u_h": "i/check_u_h.png",
+                "check_u_p": "i/check_u_p.png",
+                "radio_selected_n": "i/radio_selected_n.png",
+                "radio_selected_h": "i/radio_selected_h.png",
+                "radio_selected_p": "i/radio_selected_p.png",
+                "radio_unselect_n": "i/radio_unselect_n.png",
+                "radio_unselect_h": "i/radio_unselect_h.png",
+                "radio_unselect_p": "i/radio_unselect_p.png",
+
+                "bookmark_bar_bk": "i/bookmark_bar_bk.png",
+
+                "newtab_favicon": "i/newtab.png",
+                "bookmarks_favicon": "i/bookmark.png",
+                "history_favicon": "i/history.png",
+                "settings_favicon": "i/setting.png",
+
+                "button_shine": "i/button_shine.png",
+
+                "user_login_dropdown_button_h": "i/dropdown_button_h.png",
+                "user_login_dropdown_button_p": "i/dropdown_button_p.png",
+                "user_login_btn_n": "i/user_login_btn_n.png",
+                "user_login_btn_h": "i/user_login_btn_h.png",
+                "user_login_btn_p": "i/user_login_btn_p.png",
+                "user_qq_login_btn_h": "i/user_qq_login_btn_h.png",
+                "user_qq_login_btn_p": "i/user_qq_login_btn_p.png",
+                "user_login_link_bk_n": "i/user_login_link_bk_n.png",
+                "user_login_link_bk_h": "i/user_login_link_bk_h.png",
+                "user_login_link_bk_p": "i/user_login_link_bk_p.png",
+             
+                "safety_abnormal_n": "i/safety_abnormal_n.png",  
+                "safety_abnormal_p": "i/safety_abnormal_p.png",  
+                "safety_abnormal_h": "i/safety_abnormal_h.png"   
+            },
+            "colors": {
+                "tab_text": [42, 43, 44],
+                "tab_background_text": [42, 43, 44],
+                "color_menu_container_bkg": [248, 248, 248],
+                "color_menu_item_bkg": [248, 248, 248],
+                "color_menu_title_user_name": [60, 60, 60],
+                "color_menu_title_description": [110, 110, 110],
+                "color_menu_title_text_prompt": [255, 115, 15],
+                "color_menu_content_prompt": [212, 112, 151],
+
+                "typical_frame_color": [205, 205, 212],
+                "typical_frame_color_inactive": [239, 239, 241],
+                "color_bookmark_text": [92, 96, 105],
+                "color_bookmark_hov_text": [255, 255, 255],
+                "color_bookmark_high_text": [255, 255, 255],
+
+                "color_status_text": [130, 130, 130],
+                "color_status_background": [199, 206, 222],
+
+                "bookmark_text": [92, 96, 105],
+                "bookmark_press_link": [255, 255, 255],
+                "color_locationbar_resulturl_texthighlight": [252, 162, 85],
+                "color_user_login_link_text": [75, 102, 119],
+
+                "color_button_text_h": [105, 105, 108],
+                "color_button_text_p": [105, 105, 108]
+            },
+            "properties": {
+                "property_locationbar_forward_alwaysshow": 0,
+                "bookmark_btn_inset_lr": 5,
+                "property_frame_bkg_tiled": 1
+            },
+            "layouts": {
+                "layout_main": "i/layout_main"
+            }
+        }
+    }
+
 
 
 .. seealso:: (^.^)
