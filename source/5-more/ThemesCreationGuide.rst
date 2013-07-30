@@ -22,7 +22,7 @@
 - 如果你在使用 Photoshop, 就可以下载 `Chrome 窗口设计稿 <http://www.chromium.org/user-experience/visual-design/chrome_0.2_psd.zip>`_ 已经将不同元素整理到不同层,方便进行效果调整.
 - 运用一些颜色/模式/设计的创意原则,来控制主题皮肤的整体感观
 - 将你的成果打包,并通过以下渠道发布:
-    + 直接上传到 `Chrome网上主题皮肤店`_
+    + 直接上传到 `Chrome网上主题皮肤商店 <https://chrome.google.com/webstore/category/themes?hl=zh-CN>`_
     + 使用 Chrome 打包,参考: :ref:`发布托管 <chapter1-Hosting>` 或是原文: `Hosting <https://developer.chrome.com/extensions/hosting.html>`_
     + 自行制作 `.crx` , 参考: :ref:`打包 <chapter1-Packaging>` 或是原文: `Packaging <https://developer.chrome.com/extensions/packaging.html>`_
 
