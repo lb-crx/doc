@@ -3,7 +3,7 @@
 .. _chapterFAQ:
 
 
-常见问题
+常见问题(1/1)
 ===================
 
 如果您在这里找不到您的问题的答案，请尝试 `Chrome网上应用店常见问题 <https://code.google.com/chrome/webstore/faq.html>`_ （英文）、 `网上论坛 <https://groups.google.com/a/chromium.org/group/chromium-extensions>`_ （英文）或 `网上应用店帮助 <https://www.google.com/support/chrome_webstore/?hl=zh-CN>`_ 帮助。
