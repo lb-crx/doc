@@ -334,7 +334,7 @@ Advanced Theme Elements
 .. _TCG-Frame:
 
 - Frame:
-  - desc
+  - 这是一个颜色元素，为指定浏览器框架区域的颜色（标签页后的区域+边框）。它是 :ref:`"theme_frame" <TCG-theme_frame>` 图片没有覆盖到的区域，在 manifest.json 文件中用来指定这个元素的格式是 `"frame_inactive" : [R,G,B]` 。
 
 
 
