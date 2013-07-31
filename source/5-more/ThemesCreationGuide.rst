@@ -130,7 +130,7 @@
 
 
 
-Color Elements
+颜色元素 Color Elements
 ^^^^^^^^^^^^^^^^^^^^^^^    
 
 .. list-table:: 颜色元素
