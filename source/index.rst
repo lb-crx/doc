@@ -10,8 +10,8 @@ Chrome 扩展技术手册
 .. include:: HelloThere.rst
 
 
-开发手册 (30/145)
-------------------------
+:ref:`开发手册 <chapter0idx>` (30/145)
+------------------------------------------------
 
 
 .. toctree::
@@ -24,7 +24,7 @@ Chrome 扩展技术手册
     4-samples/index.rst
 
 
-:ref:`更多手册 <chapter5index>` (2/70)
+:ref:`更多手册 <chapter5index>` (2/69)
 ------------------------------------------------------------------------
 
 
@@ -36,7 +36,6 @@ Chrome 扩展技术手册
     5-more/installable/index.rst
     5-more/webstore/index.rst
     5-more/FAQ.rst
-    5-more/Themes.rst
 
 
 猎豹专用手册
@@ -45,8 +44,9 @@ Chrome 扩展技术手册
 .. toctree::
     :maxdepth: 1
 
-    3-reference/liebaoAPIs.rst
+    5-more/Themes.rst
     5-more/lb4crx/index.rst
+    3-reference/liebaoAPIs.rst
 
 
 
