@@ -100,10 +100,15 @@
 使用 `--pack-extension` 参数指定扩展程序所在文件夹位置，
 使用 `--pack-extension-key` 指定扩展程序的私有密钥文件位置。
 
-例如： 
+例如 Windows 环境下，在 CMD 中输入如下命令： 
 ::
 
     chrome.exe --pack-extension=c:\myext --pack-extension-key=c:\myext.pem
+
+Linux 环境下，使用如下命令：
+::
+
+    google-chrome --pack-extension=/home/glow/myext --pack-extension-key=/home/glow/myext.pem
 
 
 如果不希望看到对话框，请在命令行中添加 `--no-message-box` 参数。
