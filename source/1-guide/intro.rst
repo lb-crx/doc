@@ -1,17 +1,17 @@
 
 
-These pages assume you've completed the Getting Started tutorial and Overview. Unless otherwise stated, everything in this page applies to packaged apps, as well as extensions.
+下面这些章节, 是假定你已经把 :ref:`扩展入门 <chapter0hallo>` 和 :ref:`综述 <chapter0overview>` 给啃过了的基础上的. 除非特殊说明, 这里的所有文档适用于扩展以及打包应用.
 
 
-Changing the Google Chrome chrome
+自定义 Google Chrome 浏览器
 -------------------------------------------------------------- 
 
-- Browser Actions     Add icons to the toolbar (extensions only)
-- Desktop Notifications   Notify users of important events
-- Omnibox     Add a keyword to the address bar
+- :ref:`浏览器操作 <chapter1-BrowserActions>`      加图标到工具栏 (只适用于扩展)
+- :ref:`桌面通知 <chapter1-DesktopNotifications>`   通知用户重要的事件
+- :ref:`Omnibox <chapter1-Omnibox>`     添关键字到地址栏
 - Options Pages   Let users customize your extension
 - Override Pages  Implement your own version of standard browser pages such as the New Tab page
-- Page Actions    Add temporary icons inside the address bar (extensions only)
+- Page Actions    Add temporary icons inside the address bar (只适用于扩展)
 - Themes  Change the overall appearance of the browser
 
 
