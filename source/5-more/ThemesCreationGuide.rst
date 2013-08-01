@@ -112,7 +112,7 @@
      - 110 x 40
    * - 6.1
      - 区域同前,仅在窗口不活跃时生效
-     - ref:`"theme_frame_overlay_inactive" <TCG-theme_frame_overlay_inactive>`
+     - :ref:`"theme_frame_overlay_inactive" <TCG-theme_frame_overlay_inactive>`
      - ~
    * - 7
      - 标签工具栏按钮背景
@@ -130,7 +130,7 @@
 
 
 
-Color Elements
+颜色元素 Color Elements
 ^^^^^^^^^^^^^^^^^^^^^^^    
 
 .. list-table:: 颜色元素
@@ -140,9 +140,63 @@ Color Elements
    * - 标号
      - 说明
      - manifest.json 参数
-   * - 标号
-     - 说明
-     - manifest.json 参数
+   * - 10
+     - frame 的颜色，包括较小的外框
+     - :ref:`"frame" <TCG-Frame>`
+   * - 10.1
+     - 相同元素的颜色，但是在非活动模式
+     - :ref:`"frame_inactive" <TCG-Frame_inactive>`
+   * - 10.2
+     - 相同元素的颜色，但是在隐身模式
+     - :ref:`"frame_incognito" <TCG-Frame_incognito>`
+   * - 10.3
+     - 相同元素的颜色，但是在非活动模式和隐身模式
+     - :ref:`"frame_incognito_inactive" <TCG-Frame_incognito_inactive>`
+   * - 10.4
+     - 工具栏的背景颜色（按下Ctrl+B可显示）
+     - :ref:`"toolbar" <TCG-toolbar>`
+   * - 11
+     - 文字颜色，当前选项卡的标题中
+     - :ref:`"tab_text" <TCG-tab_text>`
+   * - 12
+     - 文字颜色，所有的非活动选项卡的标题中
+     - :ref:`"tab_background_text" <TCG-tab_background_text>`
+   * - 13
+     - 书签元素文字的颜色
+     - :ref:`"bookmark_text" <TCG-bookmark_text>`
+   * - 14
+     - 主题内的背景颜色
+     - :ref:`"ntp_background" <TCG-ntp_background>`
+   * - 14.1
+     - “常去网站”区域内出现的所有文字的颜色
+     - :ref:`"ntp_text" <TCG-ntp_text>`
+   * - 14.2
+     - “常去网站”区域出现的所有链接的颜色
+     - :ref:`"ntp_link" <TCG-ntp_link>`
+   * - 14.3
+     - 新开选项卡内所有链接的下划线的颜色
+     - :ref:`"ntp_link_underline" <TCG-ntp_link_underline>`
+   * - 14.4
+     - 当鼠标划过时常去网站 frame 的颜色
+     - :ref:`"ntp_header" <TCG-ntp_header>`
+   * - 14.5
+     - “最近关闭”区域的背景颜色和快速链接的 frame颜色
+     - :ref:`"ntp_section" <TCG-ntp_section>`
+   * - 14.6
+     - section 内的文字颜色
+     - :ref:`"ntp_section_text" <TCG-ntp_section_text>`
+   * - 14.7 
+     - section 区域内的链接颜色
+     - :ref:`"ntp_section_link" <TCG-ntp_section_link>`
+   * - 14.8
+     - section 区域内链接下划线的颜色
+     - :ref:`"ntp_section_link_underline" <TCG-ntp_section_link_underline>`
+   * - 15
+     - 未确定 - 窗口控制按钮的颜色（关闭、最大化等等）
+     - :ref:`"control_background" <TCG-control_background>`
+   * - 16
+     - 工具栏所有按钮的背景颜色
+     - :ref:`"button_background" <TCG-button_background>`
 
 
 Tint Elements
@@ -280,14 +334,14 @@ Advanced Theme Elements
 .. _TCG-Frame:
 
 - Frame:
-  - desc
+  - 这是一个颜色元素，为指定浏览器框架区域的颜色（标签页后的区域+边框）。它是 :ref:`"theme_frame" <TCG-theme_frame>` 图片没有覆盖到的区域，在 manifest.json 文件中用来指定这个元素的格式是 `"frame_inactive" : [R,G,B]` 。
 
 
 
 .. _TCG-Frame_inactive:
 
 - Frame_inactive:
-  - desc
+  - 这是一个颜色元素，
 
 
 
