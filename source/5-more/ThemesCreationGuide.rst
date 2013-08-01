@@ -172,7 +172,7 @@
      - :ref:`"ntp_text" <TCG-ntp_text>`
    * - 14.2
      - “常去网站”区域出现的所有链接的颜色
-     - :ref:`"ntp_link_underline" <TCG-ntp_link>`
+     - :ref:`"ntp_link" <TCG-ntp_link>`
    * - 14.3
      - 新开选项卡内所有链接的下划线的颜色
      - :ref:`"ntp_link_underline" <TCG-ntp_link_underline>`
@@ -341,7 +341,7 @@ Advanced Theme Elements
 .. _TCG-Frame_inactive:
 
 - Frame_inactive:
-  - desc
+  - 这是一个颜色元素，
 
 
 
