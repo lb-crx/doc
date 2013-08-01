@@ -20,5 +20,4 @@
     chromeAPIs.rst
     Experimental.rst
     othersAPIs.rst
-    liebaoAPIs.rst
 
