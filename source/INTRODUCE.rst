@@ -13,8 +13,13 @@
     + 安装 git/python/sphinx
     + clone 工程到本地 `git clone git@github.com:lb-crx/doc.git`
     + 进入 `source` 增补你想翻译的
-    + 检入本地修订
-    + 使用Sphinx 编译出本地网站查阅效果
+    + 检入本地修订 (使用Sphinx 编译出本地网站查阅效果)
+    + pull 远程仓库修订,解决可能的冲突
+    + push 本地翻译到主仓库,令其它同学获得最新内容
+
+
+`平日仅仅是最后3步的循环`
+
 
 TODO:
     - 根据读者的怒吼进行温和的修订
