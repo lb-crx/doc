@@ -9,22 +9,22 @@
 - :ref:`浏览器操作 <chapter1-BrowserActions>`      加图标到工具栏 (只适用于扩展)
 - :ref:`桌面通知 <chapter1-DesktopNotifications>`   通知用户重要的事件
 - :ref:`Omnibox <chapter1-Omnibox>`     添关键字到地址栏
-- Options Pages   Let users customize your extension
-- Override Pages  Implement your own version of standard browser pages such as the New Tab page
-- Page Actions    Add temporary icons inside the address bar (只适用于扩展)
-- Themes  Change the overall appearance of the browser
+- :ref:`选项页 <chapter1-OptionsPage>`   让用户自定义你的扩展
+- :ref:`自定义页 <chapter1-OverridePages>`  实现你自己的标准浏览器页面，比如新标签页
+-  :ref:`页面操作 <chapter1-PageActions>`    在地址栏添加临时图标 (只适用于扩展)
+-  :ref:`主题皮肤 <chapter1-Themes>`   更改浏览器的整体外观
 
 
-Interacting with Google Chrome in other ways
+其他与 Google Chrome 的交互方式
 -------------------------------------------------------------- 
 
-- Bookmarks   Create, organize, and otherwise manipulate the user's bookmarks
-- Cookies     Explore and modify the browser's cookie system
-- :ref:`Developer Tools <chapter1-DeveloperTools>`     Add features to Chrome Developer Tools
-- Events  Detect when something interesting happens
-- History     Interact with the browser's record of visited pages
-- Tabs    Create, modify, and rearrange tabs in the browser
-- Windows     Create, modify, and rearrange windows in the browser
+- :ref:`书签 <chapter1-Bookmarks>`   新建，组织和管理用户书签
+- :ref:`Cookies <chapter1-Cookies>`     浏览和修改浏览器 cookie 
+- :ref:`开发者工具 <chapter1-DeveloperTools>`     在开发者工具栏中添加新功能
+- :ref:`事件 <chapter1-Events>`  监测是否有感兴趣的事件发生
+- :ref:`历史 <chapter1-History>`     交互访问浏览器曾经访问的页面记录
+- :ref:`标签页 <chapter1-Tabs>`    创建，修改和重排浏览器标签
+- :ref:`窗口 <chapter1-Windows>`     创建，修改和重排浏览器窗口
 
 Implementing the innards of your extension
 -------------------------------------------------------------- 
