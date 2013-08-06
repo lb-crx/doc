@@ -14,7 +14,7 @@
 
     BrowserActions.rst
     ContextMenus.rst
-    Notifications.rst
+    DesktopNotifications.rst
     Omnibox.rst
     OptionsPages.rst
     OverridePages.rst
@@ -32,7 +32,7 @@
     a11y.rst
     BackgroundPages.rst
     ContentScripts.rst
-    CrossOriginXMLHttpRequest.rst
+    XHR.rst
     i18n.rst
     MessagePassing.rst
     OptionalPermissions.rst

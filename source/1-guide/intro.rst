@@ -9,10 +9,10 @@
 - :ref:`浏览器操作 <chapter1-BrowserActions>`      加图标到工具栏 (只适用于扩展)
 - :ref:`桌面通知 <chapter1-DesktopNotifications>`   通知用户重要的事件
 - :ref:`Omnibox <chapter1-Omnibox>`     添关键字到地址栏
-- :ref:`选项页 <chapter1-OptionsPage>`   让用户自定义你的扩展
+- :ref:`选项页 <chapter1-OptionsPages>`   让用户自定义你的扩展
 - :ref:`自定义页 <chapter1-OverridePages>`  实现你自己的标准浏览器页面，比如新标签页
--  :ref:`页面操作 <chapter1-PageActions>`    在地址栏添加临时图标 (只适用于扩展)
--  :ref:`主题皮肤 <chapter1-Themes>`   更改浏览器的整体外观
+- :ref:`页面操作 <chapter1-PageActions>`    在地址栏添加临时图标 (只适用于扩展)
+- :ref:`主题皮肤 <chapter1-Themes>`   更改浏览器的整体外观
 
 
 其他与 Google Chrome 的交互方式
@@ -29,14 +29,14 @@
 Implementing the innards of your extension
 -------------------------------------------------------------- 
 
-- Accessibility (a11y)    Make your extension accessible to people with disabilities
-- Background Pages    Put all the common code for your extension in a single place
-- Content Scripts     Run JavaScript code in the context of web pages
-- Cross-Origin XHR    Use XMLHttpRequest to send and receive data from remote servers
-- Internationalization    Deal with language and locale
-- Message Passing     Communicate from a content script to its parent extension, or vice versa
-- Optional Permissions    Modify your extension's permissions
-- NPAPI Plugins   Load native binary code
+- :ref:`无障碍使用 <chapter1-a11y>`    Make your extension accessible to people with disabilities
+- :ref:`后台页面 <chapter1-BackgroundPages>`    Put all the common code for your extension in a single place
+- :ref:`内容脚本 <chapter1-ContentScripts>`     Run JavaScript code in the context of web pages
+- :ref:`XHR <chapter1-XHR>`    Use XMLHttpRequest to send and receive data from remote servers
+- :ref:`国际化 <chapter1-i18n>`    Deal with language and locale
+- :ref:`消息传递 <chapter1-MessagePassing>`     Communicate from a content script to its parent extension, or vice versa
+- :ref:`可选权限控制 <chapter1-OptionalPermissions>`    Modify your extension's permissions
+- :ref:`NPAPI插件 <chapter1-NPAPIPlugins>`   Load native binary code
 
 
 Finishing and distributing your extension
