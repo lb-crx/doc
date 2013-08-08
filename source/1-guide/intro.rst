@@ -26,24 +26,24 @@
 - :ref:`标签页 <chapter1-Tabs>`    创建，修改和重排浏览器标签
 - :ref:`窗口 <chapter1-Windows>`     创建，修改和重排浏览器窗口
 
-Implementing the innards of your extension
+完善扩展的内在结构
 -------------------------------------------------------------- 
 
-- :ref:`无障碍使用 <chapter1-a11y>`    Make your extension accessible to people with disabilities
-- :ref:`后台页面 <chapter1-BackgroundPages>`    Put all the common code for your extension in a single place
-- :ref:`内容脚本 <chapter1-ContentScripts>`     Run JavaScript code in the context of web pages
-- :ref:`XHR <chapter1-XHR>`    Use XMLHttpRequest to send and receive data from remote servers
-- :ref:`国际化 <chapter1-i18n>`    Deal with language and locale
-- :ref:`消息传递 <chapter1-MessagePassing>`     Communicate from a content script to its parent extension, or vice versa
-- :ref:`可选权限控制 <chapter1-OptionalPermissions>`    Modify your extension's permissions
-- :ref:`NPAPI插件 <chapter1-NPAPIPlugins>`   Load native binary code
+- :ref:`无障碍使用 <chapter1-a11y>`    使你的控件对残障人士可用
+- :ref:`后台页面 <chapter1-BackgroundPages>`    统一管理你的扩展用到的公共代码
+- :ref:`内容脚本 <chapter1-ContentScripts>`     在网页运行环境内执行你的JavaScript代码
+- :ref:`XHR <chapter1-XHR>`    使用XMLHttpRequest和远程服务端进行数据通讯
+- :ref:`国际化 <chapter1-i18n>`    国际化和本地化
+- :ref:`消息传递 <chapter1-MessagePassing>`     在内容脚本和它所在的扩展之间进行消息传递
+- :ref:`可选权限控制 <chapter1-OptionalPermissions>`    修改扩展的权限
+- :ref:`NPAPI插件 <chapter1-NPAPIPlugins>`   加载原生二进制代码
 
 
-Finishing and distributing your extension
+完成和打包扩展
 --------------------------------------------------------------  
 
-- :ref:`自动更新 <chapter1-Autoupdating>`    Update extensions automatically
-- :ref:`发布托管 <chapter1-Hosting>`     Host extensions on Google servers or your own
-- :ref:`其它部署选项 <chapter1-OtherDeploymentOptions>` Other Deployment Options    Distribute extensions on your network or with other software
-- :ref:`Packaging <chapter1-Packaging>`   Create a .crx file so you can distribute your extension 
+- :ref:`自动更新 <chapter1-Autoupdating>`    自动更新扩展
+- :ref:`发布托管 <chapter1-Hosting>`     在Google或自己的服务器上托管扩展
+- :ref:`其它部署选项 <chapter1-OtherDeploymentOptions>`     在自己的网络或协同其他的软件发布
+- :ref:`打包 <chapter1-Packaging>`   创建一个 .crx 文件来发布扩展
 
