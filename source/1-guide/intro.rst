@@ -6,12 +6,12 @@
 自定义 Google Chrome 浏览器
 -------------------------------------------------------------- 
 
-- :ref:`浏览器操作 <chapter1-BrowserActions>`      加图标到工具栏 (只适用于扩展)
+- :ref:`浏览行为 <chapter1-BrowserActions>`      加图标到工具栏 (只适用于扩展)
 - :ref:`桌面通知 <chapter1-DesktopNotifications>`   通知用户重要的事件
 - :ref:`Omnibox <chapter1-Omnibox>`     添关键字到地址栏
 - :ref:`选项页 <chapter1-OptionsPages>`   让用户自定义你的扩展
 - :ref:`自定义页 <chapter1-OverridePages>`  实现你自己的标准浏览器页面，比如新标签页
-- :ref:`页面操作 <chapter1-PageActions>`    在地址栏添加临时图标 (只适用于扩展)
+- :ref:`页面行为 <chapter1-PageActions>`    在地址栏添加临时图标 (只适用于扩展)
 - :ref:`主题皮肤 <chapter1-Themes>`   更改浏览器的整体外观
 
 
