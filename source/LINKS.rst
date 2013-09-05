@@ -18,6 +18,7 @@
 .. _Gmail: http://zh.wikipedia.org/wiki/GMail
 
 .. _Chrome扩展手册: http://developer.chrome.com/extensions
+.. _样例库: https://developer.chrome.com/extensions/samples.html
 
 .. _crx: http://code.google.com/chrome/extensions/getstarted.html
 .. _Google Wave: http://zh.wikipedia.org/wiki/Google_Wave
