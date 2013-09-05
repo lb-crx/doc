@@ -1,6 +1,6 @@
 .. include:: ../LINKS.rst
 
-.. _chapter1BrowserActions:
+.. _chapter1-BrowserActions:
 
 .. _canvas元素: http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html
 
