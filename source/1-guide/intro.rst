@@ -1,12 +1,12 @@
 
-
 下面这些章节, 是假定你已经把 :ref:`扩展入门 <chapter0hallo>` 和 :ref:`综述 <chapter0overview>` 给啃过了的基础上的. 除非特殊说明, 这里的所有文档适用于扩展以及打包应用.
 
 
 自定义 Google Chrome 浏览器
 -------------------------------------------------------------- 
 
-- :ref:`浏览行为 <chapter1-BrowserActions>`      加图标到工具栏 (只适用于扩展)
+
+- :ref:`浏览行为 <chapter1-BrowserActions>` 加图标到工具栏 (只适用于扩展)
 - :ref:`桌面通知 <chapter1-DesktopNotifications>`   通知用户重要的事件
 - :ref:`Omnibox <chapter1-Omnibox>`     添关键字到地址栏
 - :ref:`选项页 <chapter1-OptionsPages>`   让用户自定义你的扩展

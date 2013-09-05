@@ -7,6 +7,9 @@
 
 .. 外部链接收集~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. _canvas元素: http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html
+
+
 .. Borwser 相关 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. _浏览器战争: http://en.wikipedia.org/wiki/Browser_wars
 .. _猎豹浏览器: http://www.liebao.cn/
