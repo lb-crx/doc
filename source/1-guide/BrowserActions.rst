@@ -166,10 +166,20 @@ UI组件
 ----------------------------------------------------------------------------
 你可以在 `examples/api/browserAction <http://src.chromium.org/viewvc/chrome/trunk/src/chrome/common/extensions/docs/examples/api/browserAction/>`_ 目录下找到一些使用＂浏览行为＂扩展的简单样例. 其他例子和源代码查看帮助请查看 `样例库`_ 
 
-API reference: chrome.browserAction
+API 手册: chrome.browserAction
 ------------------------------------------------------------------------------
 
-Methods
+Types
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ColorArray
+
+ImageDataType
+
+Pixel data for an image. Must be an ImageData object (for example, from a canvas element).
+
+
+方法
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _BrowserActions-setBadgeBackgroundColor:
